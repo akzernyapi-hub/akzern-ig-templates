@@ -1,9 +1,8 @@
 {
- "tip": "tekil",
+ "tip": "lifestyle",
  "kategori": "Kapı Kolu",
- "klasor": "tekil-2026-07-04-0",
+ "klasor": "lifestyle-test",
  "products": [
-  {"slug":"anka-aynali-kapi-kolu-mat-siyah","cutout_url":"https://pikaso.cdnpk.net/private/production/4788384207/render.png?token=exp=1783555200~hmac=d263e60d805cbf24bf1afd9732dba063aabda6a59061b8a3e11418695ea40a5f","ad":"Anka Aynalı|Kapı Kolu","finish":"Mat Siyah","price":"549.99","compareAtPrice":null,"kategori":"Kapı Kolu"},
-  {"slug":"anka-aynali-kapi-kolu-mat-siyah-wc","cutout_url":"https://pikaso.cdnpk.net/private/production/4788400801/render.png?token=exp=1783555200~hmac=5c730d9331de52f4ced53aed036006ed41ef19e600b983450b886cec4ba5298c","ad":"Anka Aynalı|Kapı Kolu WC","finish":"Mat Siyah","price":"599.99","compareAtPrice":null,"kategori":"Kapı Kolu"}
+  {"slug":"anka","cutout_url":"https://pikaso.cdnpk.net/private/production/4788030890/render.png?token=exp=1783555200~hmac=9d6d6f958f1b589791ba4c5b22aa60f934f971af43b2f2ebd96773eab2e87823","gercek_url":"https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-9.webp","ad":"Anka Aynalı|Kapı Kolu","finish":"Nikel Saten","baslik":"Detaylarda|Zarafet","kategori":"Kapı Kolu"}
  ]
 }
