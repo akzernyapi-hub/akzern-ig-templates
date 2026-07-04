@@ -25,10 +25,14 @@ jobs:
           job = json.load(open('job.json'))
           os.makedirs('assets/hero', exist_ok=True)
           for h in job['heroes']:
-              urllib.request.urlretrieve(h['url'], f"assets/hero/{h['slug']}.png")
-              print('hero:', h['slug'], os.path.getsize(f"assets/hero/{h['slug']}.png'"[:-1]) if False else os.path.getsize(f"assets/hero/{h['slug']}.png"))
-          urllib.request.urlretrieve(job['kapak_url'], 'assets/kapak-hero.png')
-          print('kapak:', os.path.getsize('assets/kapak-hero.png'))
+              hero_path = f"assets/hero/{h['slug']}.png"
+              if not os.path.exists(hero_path) or os.path.getsize(hero_path) < 50000:
+                  urllib.request.urlretrieve(h['url'], hero_path)
+              print('hero:', h['slug'], os.path.getsize(hero_path))
+          kapak_path = 'assets/kapak-hero.png'
+          if not os.path.exists(kapak_path) or os.path.getsize(kapak_path) < 50000:
+              urllib.request.urlretrieve(job['kapak_url'], kapak_path)
+          print('kapak:', os.path.getsize(kapak_path))
           json.dump(job['products'], open('products.json','w'), ensure_ascii=False, indent=1)
           PY
           export CHROME_BIN=$(python3 -c "from playwright.sync_api import sync_playwright; p=sync_playwright().start(); print(p.chromium.executable_path)")
