@@ -25,7 +25,7 @@ def tr_fiyat(p):
     return f"{int(intp):,}".replace(",", "."), "," + dec
 
 def render(out, url):
-    subprocess.run([CHROME,"--headless=new","--disable-gpu","--hide-scrollbars",
+    subprocess.run([CHROME,"--headless=new","--disable-gpu","--hide-scrollbars","--no-sandbox",
         "--force-device-scale-factor=2","--window-size=1080,1350",f"--screenshot={out}",url],
         stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
 
@@ -57,7 +57,7 @@ def main(products_json, outdir, kapak):
         '.s{position:relative}.s img{width:330px;display:block;border-radius:9px;box-shadow:0 8px 22px rgba(0,0,0,.18)}'
         '.s b{position:absolute;top:7px;left:7px;background:#2b2b2b;color:#fff;font-size:12px;font-weight:700;padding:3px 8px;border-radius:6px}'
         '</style>' + cells)
-    subprocess.run([CHROME,"--headless=new","--disable-gpu","--hide-scrollbars","--force-device-scale-factor=2",
+    subprocess.run([CHROME,"--headless=new","--disable-gpu","--hide-scrollbars","--no-sandbox","--force-device-scale-factor=2",
         f"--window-size={360*n+40},510", f"--screenshot={outdir}/_TAM-CAROUSEL.png",
         f"http://localhost:{PORT}/_montaj.html"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     print(f"✓ {outdir}/_TAM-CAROUSEL.png (kontakt önizleme)")
