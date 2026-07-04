@@ -1,8 +1,25 @@
 {
- "tip": "tekil",
- "kategori": "Kapı Kolu",
- "klasor": "drive-test",
- "products": [
-  {"slug":"kristal","cutout_url":"https://pikaso.cdnpk.net/private/production/4788029856/render.png?token=exp=1783555200~hmac=ab1a2eff1b124c9c8cb43ee274ae8de653e3d3b96113e3ac459a3c969aecf81c","ad":"Kristal Aynalı|Kapı Kolu","finish":"Nikel Saten","price":"819.99","compareAtPrice":null,"kategori":"Kapı Kolu · ODA"}
- ]
+  "tip": "tekil",
+  "kategori": "Kapı Kolu",
+  "klasor": "tekil-2026-07-04-0",
+  "products": [
+    {
+      "slug": "anka-aynali-kapi-kolu-mat-siyah",
+      "cutout_url": "https://pikaso.cdnpk.net/private/production/4788340095/render.png?token=exp=1783555200~hmac=f7c6e5cafbba7b6fae778737e696fa162a8ce0f9bf1feb7d0313c93efcb12f90",
+      "ad": "Anka Aynalı|Kapı Kolu Mat Siyah",
+      "finish": "Mat Siyah",
+      "price": "549.99",
+      "compareAtPrice": "549.99",
+      "kategori": "Kapı Kolu"
+    },
+    {
+      "slug": "anka-aynali-kapi-kolu-mat-siyah-wc",
+      "cutout_url": "https://pikaso.cdnpk.net/private/production/4788340286/render.png?token=exp=1783555200~hmac=1f8c87a53ef6a1c61396aa493abe7ffea8a1c3e20c32f480e51076bbd6521702",
+      "ad": "Anka Aynalı Kapı Kolu|Mat Siyah WC",
+      "finish": "Mat Siyah",
+      "price": "599.99",
+      "compareAtPrice": "599.99",
+      "kategori": "Kapı Kolu"
+    }
+  ]
 }
