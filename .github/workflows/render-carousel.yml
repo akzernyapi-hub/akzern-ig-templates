@@ -17,28 +17,32 @@ jobs:
         run: |
           pip install --quiet Pillow playwright
           python -m playwright install --with-deps chromium
-      - name: İndir + render + arşiv
+      - name: İndir kesimler + kompoze + render + arşiv
         run: |
           cd render
           python3 - <<'PY'
           import json, os, urllib.request
           job = json.load(open('job.json'))
-          os.makedirs('assets/hero', exist_ok=True)
-          for h in job['heroes']:
-              urllib.request.urlretrieve(h['url'], f"assets/hero/{h['slug']}.png")
-              print('hero', h['slug'], os.path.getsize(f"assets/hero/{h['slug']}.png"))
-          urllib.request.urlretrieve(job['kapak_url'], 'assets/kapak-hero.png')
-          json.dump(job['products'], open('products.json','w'), ensure_ascii=False, indent=1)
+          os.makedirs('assets/cut', exist_ok=True)
+          prods = job['products']
+          for p in prods:
+              urllib.request.urlretrieve(p['cutout_url'], f"assets/cut/{p['slug']}.png")
+              print('kesim', p['slug'], os.path.getsize(f"assets/cut/{p['slug']}.png"))
+          pj = [{"ad":p["ad"],"finish":p["finish"],"price":p["price"],
+                 "compareAtPrice":p.get("compareAtPrice"),"hero":f"assets/ic/{p['slug']}.png"} for p in prods]
+          json.dump(pj, open('products.json','w'), ensure_ascii=False, indent=1)
+          json.dump([p['slug'] for p in prods], open('_slugs.json','w'))
           PY
+          python3 kompoze.py "$(cat _slugs.json)"
           export CHROME_BIN=$(python3 -c "from playwright.sync_api import sync_playwright; p=sync_playwright().start(); print(p.chromium.executable_path)")
           (python3 -m http.server 8791 >/dev/null 2>&1 &) ; sleep 2
-          "$CHROME_BIN" --headless=new --no-sandbox --disable-gpu --hide-scrollbars --force-device-scale-factor=2 --window-size=1080,1350 --screenshot=kapak-kapikollari.png 'http://localhost:8791/AKZERN%20Kapak%20-%20Kapi%20Kollari.html'
-          python3 uret-carousel.py products.json ../out kapak-kapikollari.png
+          "$CHROME_BIN" --headless=new --no-sandbox --disable-gpu --hide-scrollbars --force-device-scale-factor=2 --window-size=1080,1350 --screenshot=kapak.png 'http://localhost:8791/AKZERN%20Kapak%20-%20Kapi%20Kollari.html'
+          python3 uret-carousel.py products.json ../out kapak.png
           KLASOR=$(python3 -c "import json;print(json.load(open('job.json')).get('klasor','son'))")
           mkdir -p "../arsiv/$KLASOR" && cp ../out/*.png "../arsiv/$KLASOR/"
-          echo "=== arşiv: arsiv/$KLASOR ==="; ls -la "../arsiv/$KLASOR"
+          echo "=== arşiv: $KLASOR ==="; ls -la "../arsiv/$KLASOR"
       - name: Commit (out + arşiv)
         run: |
           git config user.name akzern-bot
           git config user.email bot@akzern.local
-          git add out/ arsiv/ && git commit -m "carousel render + arşiv [skip ci]" && git push || echo "değişiklik yok"
+          git add out/ arsiv/ && git commit -m "carousel (kesim kompoze) + arşiv [skip ci]" && git push || echo "değişiklik yok"
