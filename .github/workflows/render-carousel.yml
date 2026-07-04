@@ -17,7 +17,7 @@ jobs:
         run: |
           pip install --quiet Pillow playwright
           python -m playwright install --with-deps chromium
-      - name: İndir + products.json + render
+      - name: İndir + render + arşiv
         run: |
           cd render
           python3 - <<'PY'
@@ -25,24 +25,20 @@ jobs:
           job = json.load(open('job.json'))
           os.makedirs('assets/hero', exist_ok=True)
           for h in job['heroes']:
-              hero_path = f"assets/hero/{h['slug']}.png"
-              if not os.path.exists(hero_path) or os.path.getsize(hero_path) < 50000:
-                  urllib.request.urlretrieve(h['url'], hero_path)
-              print('hero:', h['slug'], os.path.getsize(hero_path))
-          kapak_path = 'assets/kapak-hero.png'
-          if not os.path.exists(kapak_path) or os.path.getsize(kapak_path) < 50000:
-              urllib.request.urlretrieve(job['kapak_url'], kapak_path)
-          print('kapak:', os.path.getsize(kapak_path))
+              urllib.request.urlretrieve(h['url'], f"assets/hero/{h['slug']}.png")
+              print('hero', h['slug'], os.path.getsize(f"assets/hero/{h['slug']}.png"))
+          urllib.request.urlretrieve(job['kapak_url'], 'assets/kapak-hero.png')
           json.dump(job['products'], open('products.json','w'), ensure_ascii=False, indent=1)
           PY
           export CHROME_BIN=$(python3 -c "from playwright.sync_api import sync_playwright; p=sync_playwright().start(); print(p.chromium.executable_path)")
-          echo "CHROME=$CHROME_BIN"
           (python3 -m http.server 8791 >/dev/null 2>&1 &) ; sleep 2
           "$CHROME_BIN" --headless=new --no-sandbox --disable-gpu --hide-scrollbars --force-device-scale-factor=2 --window-size=1080,1350 --screenshot=kapak-kapikollari.png 'http://localhost:8791/AKZERN%20Kapak%20-%20Kapi%20Kollari.html'
           python3 uret-carousel.py products.json ../out kapak-kapikollari.png
-          echo "=== out ==="; ls -la ../out
-      - name: Sonuçları repoya commit et
+          KLASOR=$(python3 -c "import json;print(json.load(open('job.json')).get('klasor','son'))")
+          mkdir -p "../arsiv/$KLASOR" && cp ../out/*.png "../arsiv/$KLASOR/"
+          echo "=== arşiv: arsiv/$KLASOR ==="; ls -la "../arsiv/$KLASOR"
+      - name: Commit (out + arşiv)
         run: |
           git config user.name akzern-bot
           git config user.email bot@akzern.local
-          git add out/ && git commit -m "carousel render [skip ci]" && git push || echo "commit yok"
+          git add out/ arsiv/ && git commit -m "carousel render + arşiv [skip ci]" && git push || echo "değişiklik yok"
