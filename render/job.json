@@ -14,5 +14,6 @@
   {"ad":"Lama Aynalı|Kapı Kolu","finish":"Mat Siyah","price":"219.99","compareAtPrice":"269.99","hero":"assets/hero/lama.png"},
   {"ad":"Kristal Aynalı|Kapı Kolu","finish":"Nikel Saten","price":"819.99","compareAtPrice":null,"hero":"assets/hero/kristal.png"},
   {"ad":"Lotus Aynalı|Kapı Kolu","finish":"Mat Siyah","price":"837.99","compareAtPrice":null,"hero":"assets/hero/lotus-siyah.png"}
- ]
+ ],
+ "_run": "2026-07-04-v3"
 }
