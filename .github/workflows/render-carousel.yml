@@ -27,7 +27,7 @@ jobs:
           prods = job['products']
           for p in prods:
               urllib.request.urlretrieve(p['cutout_url'], f"assets/cut/{p['slug']}.png")
-          pj = [{"ad":p["ad"],"finish":p["finish"],"price":p["price"],"compareAtPrice":p.get("compareAtPrice"),
+          pj = [{"ad":p["ad"],"finish":p.get("finish",""),"price":p.get("price","0"),"compareAtPrice":p.get("compareAtPrice"),"baslik":p.get("baslik",""),"tag":p.get("tag",""),
                  "slug":p["slug"],"kategori":p.get("kategori", job.get("kategori","AKZERN YAPI")),
                  "hero":f"assets/ic/{p['slug']}.png"} for p in prods]
           json.dump(pj, open('products.json','w'), ensure_ascii=False, indent=1)
