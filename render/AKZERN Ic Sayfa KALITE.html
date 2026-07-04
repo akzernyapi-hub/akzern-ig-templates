@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>AKZERN İç Sayfa — Kalite (podyumda oturan)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,900&display=swap" rel="stylesheet">
+<style>
+  :root{--accent:#F7911E;--accent-deep:#E07B12;--ink:#2A2620;--ink-soft:#6B6357;--grey:#9a927f;--line:#E4DCCC;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:#111;display:flex;justify-content:center;font-family:'Sora',sans-serif;}
+  .post{width:1080px;height:1350px;position:relative;overflow:hidden;background:#EFE7D8;-webkit-font-smoothing:antialiased;}
+  /* HERO = ürün podyumda oturmuş (Magnific tek-render, ürüne göre değişir) */
+  .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center bottom;}
+  .veilTop{position:absolute;top:0;left:0;right:0;height:420px;background:linear-gradient(180deg,rgba(244,238,228,.9) 0%,rgba(244,238,228,.3) 62%,transparent 100%);}
+  .veilBot{position:absolute;bottom:0;left:0;right:0;height:410px;background:linear-gradient(0deg,rgba(244,238,228,.95) 0%,rgba(244,238,228,.5) 50%,transparent 100%);}
+  .topbar{position:absolute;top:52px;left:60px;right:56px;display:flex;justify-content:space-between;align-items:center;z-index:6;}
+  .logo{height:56px;}
+  .carousel{display:flex;align-items:center;gap:8px;background:rgba(42,38,32,.82);color:#fff;font-weight:600;font-size:20px;padding:10px 18px;border-radius:999px;}
+  .head{position:absolute;top:150px;left:64px;right:64px;text-align:center;z-index:5;}
+  .head .kk{font-size:23px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--accent-deep);}
+  .head h2{font-family:'Fraunces',serif;font-weight:600;font-size:66px;line-height:.98;color:var(--ink);margin-top:10px;letter-spacing:-.01em;}
+  .badge{position:absolute;top:452px;right:78px;z-index:6;display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;font-weight:700;font-size:25px;padding:12px 24px;border-radius:999px;box-shadow:0 12px 28px rgba(247,145,30,.42);transform:rotate(6deg);}
+  .info{position:absolute;bottom:64px;left:64px;right:64px;z-index:6;display:flex;justify-content:space-between;align-items:flex-end;}
+  .chips{display:flex;gap:11px;margin-bottom:18px;}
+  .chip{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);color:var(--ink);font-weight:600;font-size:20px;padding:11px 19px;border-radius:13px;box-shadow:0 6px 16px rgba(0,0,0,.05);}
+  .chip .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);}
+  .price{display:flex;align-items:flex-end;gap:16px;}
+  .price .col{display:flex;flex-direction:column;gap:7px;padding-bottom:8px;}
+  .price .disc{background:var(--ink);color:#fff;font-weight:700;font-size:22px;padding:6px 13px;border-radius:9px;align-self:flex-start;}
+  .price .old{font-size:25px;color:var(--grey);text-decoration:line-through;font-weight:500;}
+  .price .now{font-family:'Fraunces',serif;font-weight:600;font-size:80px;line-height:.82;color:var(--ink);letter-spacing:-.02em;}
+  .price .now .cur{font-size:.46em;font-weight:500;vertical-align:top;}
+  .cta{display:inline-flex;align-items:center;gap:13px;background:var(--accent);color:#fff;font-weight:700;font-size:25px;padding:18px 32px;border-radius:999px;box-shadow:0 14px 30px rgba(247,145,30,.4);}
+  .cta .ar{width:29px;height:29px;border-radius:50%;background:#fff;color:var(--accent);display:grid;place-items:center;font-size:17px;}
+</style>
+</head>
+<body>
+  <div class="post">
+    <img class="bg" id="hero" src="assets/inner-hero.png" alt="ürün">
+    <div class="veilTop"></div><div class="veilBot"></div>
+    <div class="topbar"><img class="logo" src="assets/akzern-logo.png"><div class="carousel" id="sira">2 / 6 ›</div></div>
+    <div class="head"><div class="kk" id="kategori">Kapı Kolu · ODA</div><h2 id="ad">Anka Aynalı<br>Kapı Kolu</h2></div>
+    <div class="badge" id="olcu">Nikel Saten</div>
+    <div class="info">
+      <div>
+        <div class="chips" id="cipler"><div class="chip"><span class="dot"></span>1 Takım</div><div class="chip"><span class="dot"></span>Vidalar Dahil</div></div>
+        <div class="price"><div class="col" id="dcol"><span class="disc" id="indirim">%25</span><span class="old" id="eskifiyat">₺999</span></div><div class="now"><span class="cur">₺</span><span id="fiyat">749</span><span style="font-size:.5em" id="kurus">,90</span></div></div>
+      </div>
+      <div class="cta">Şimdi Al <span class="ar">›</span></div>
+    </div>
+  </div>
+<script>
+  const p=new URLSearchParams(location.search),S=(i,v)=>{if(v!=null){const e=document.getElementById(i);if(e)e.textContent=v}};
+  if(p.get('hero'))document.getElementById('hero').src=p.get('hero');
+  if(p.get('ad'))document.getElementById('ad').innerHTML=p.get('ad').replace(/\|/g,'<br>');
+  S('kategori',p.get('kategori'));S('olcu',p.get('olcu'));S('indirim',p.get('indirim'));S('eskifiyat',p.get('eskifiyat'));S('fiyat',p.get('fiyat'));S('kurus',p.get('kurus'));S('sira',p.get('sira'));
+  if(p.has('cip1')||p.has('cip2')){const mk=t=>t?`<div class="chip"><span class="dot"></span>${t}</div>`:'';document.getElementById('cipler').innerHTML=mk(p.get('cip1'))+mk(p.get('cip2'));}
+  if(p.has('eskifiyat')&&!p.get('eskifiyat'))document.getElementById('dcol').style.display='none';
+</script>
+</body>
+</html>

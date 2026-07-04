@@ -1,0 +1,49 @@
+{
+  "_aciklama": "AKZERN Instagram Otomasyon — yapılandırma. Yeni bir firmaya uyarlamak için sadece bu dosyayı değiştir.",
+
+  "marka": {
+    "ad": "AKZERN YAPI",
+    "kullanici_adi": "@akzernyapi",
+    "site": "akzern.com",
+    "logo": "assets/akzern-logo.png",
+    "renkler": { "vurgu": "#F7911E", "vurgu_koyu": "#E07B12", "murekkep": "#2A2620", "zemin": "#EFE7D8" },
+    "fontlar": { "baslik": "Fraunces", "govde": "Sora" }
+  },
+
+  "shopify": {
+    "magaza": "AKZERN YAPI",
+    "_not": "Ürünler MCP claude_ai_Shopify ile çekilir; kimlik bilgisi connector'da tutulur."
+  },
+
+  "kategoriler": [
+    { "ad": "Kapı Kolları", "shopify_sorgu": "title:*Aynalı* title:*ODA* status:active", "tip": "dekoratif", "kicker": "Kapı Kolu · ODA", "cip1": "1 Takım", "cip2": "Vidalar Dahil" },
+    { "ad": "Mobilya Kulpları", "shopify_sorgu": "title:*Kulp* status:active", "tip": "dekoratif", "kicker": "Mobilya Kulbu", "cip1": "{olcu}", "cip2": "" },
+    { "ad": "Kilit & Güvenlik", "shopify_sorgu": "title:*Kilit* OR title:*Barel*", "tip": "hirdavat", "kicker": "Kilit · Güvenlik", "cip1": "TSE Belgeli", "cip2": "" },
+    { "ad": "Menteşeler", "shopify_sorgu": "title:*Menteşe*", "tip": "hirdavat", "kicker": "Menteşe", "cip1": "{adet}", "cip2": "" },
+    { "ad": "Askılıklar", "shopify_sorgu": "title:*Askı*", "tip": "dekoratif", "kicker": "Askılık", "cip1": "Montaj Dahil", "cip2": "" }
+  ],
+
+  "fiyat": { "para_birimi": "₺", "binlik": ".", "kurus": ",", "indirim_goster": true },
+
+  "haftalik_ritim": {
+    "_aciklama": "Her hafta 1 ana gönderi + destek. Feed dengesi: satış / arzu / güven döngüsü.",
+    "pazartesi": "kategori_carousel",
+    "carsamba": "lifestyle",
+    "cuma": "kampanya_veya_marka"
+  },
+
+  "sablonlar": {
+    "kategori_carousel": { "kapak": "AKZERN Kapak - Kapi Kollari.html", "ic": "AKZERN Ic Sayfa DINAMIK.html", "urun_sayisi": 5 },
+    "lifestyle": "AKZERN Lifestyle DINAMIK.html",
+    "marka": "AKZERN Marka DINAMIK.html",
+    "kampanya": "AKZERN Kampanya DINAMIK.html"
+  },
+
+  "gorsel": {
+    "podyum_arka_plan": "assets/pod-bg.png",
+    "_not": "Ürünler Magnific images_remove_background ile şeffaflaştırılır, trim.py ile kırpılır, sabit ürün bölgesine oturur (konum HEP aynı → nizami feed).",
+    "olcu": "1080x1350"
+  },
+
+  "onay_akisi": { "hedef": "Notion İçerik Takvimi", "durum": "🟠 Onay Bekliyor", "yayin": "Metricool / elle" }
+}
