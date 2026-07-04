@@ -1,19 +1,20 @@
 {
  "kategori": "Kapı Kolları",
- "kapak_url": "https://pikaso.cdnpk.net/private/production/4785251948/render.png?token=exp=1783555200~hmac=732a985df9088025d40ca716f68b27522a9c0b2f4f55ed4bef023abf7f9da447",
+ "klasor": "2026-07-04-kapi-kollari",
+ "kapak_url": "https://pikaso.cdnpk.net/private/production/4785957048/render.png?token=exp=1783555200~hmac=88ec99dba6440f6eced00d7c3549e4fc2c4c57768002eff11fe424b2031d44d8",
  "heroes": [
-  {"slug":"lotus-nikel","url":"https://pikaso.cdnpk.net/private/production/4785249922/render.png?token=exp=1783555200~hmac=d1092ddb7c26ab02e4dfe03624605e2fd5e223363d4006d15756598627c0abfe"},
-  {"slug":"anka","url":"https://pikaso.cdnpk.net/private/production/4785249996/render.png?token=exp=1783555200~hmac=748388c44bff597b20861ffcc0e12408abc5f1d74b9eb9417028cf8ea68820c5"},
-  {"slug":"lama","url":"https://pikaso.cdnpk.net/private/production/4785250381/render.png?token=exp=1783555200~hmac=97090e704118a58a0c8686750a07e6c00fa3b9e61129df3029c429cebaeb8fd5"},
-  {"slug":"kristal","url":"https://pikaso.cdnpk.net/private/production/4785250339/render.png?token=exp=1783555200~hmac=dd11e8cc6784e8dbc5d6249d83ee0e6c973a769a080fa76f4cdcdad78e51c5be"},
-  {"slug":"lotus-siyah","url":"https://pikaso.cdnpk.net/private/production/4785250681/render.png?token=exp=1783555200~hmac=3a921bd02e8dbbcd7bd690f2e2e4cfd6231cbcc5be92e59f28cb3eb95289d09c"}
+  {"slug":"kristal","url":"https://pikaso.cdnpk.net/private/production/4785955828/render.png?token=exp=1783555200~hmac=5ce48725f024825d1714d473da9c09907ac7801f3ab1c69e673572fbc55859e0"},
+  {"slug":"lotus-siyah","url":"https://pikaso.cdnpk.net/private/production/4785955641/render.png?token=exp=1783555200~hmac=c067336c9113dc2ea4ad65c750406feff4cc3fa472506d1581b26b4514ad88ae"},
+  {"slug":"noyan","url":"https://pikaso.cdnpk.net/private/production/4785954933/render.png?token=exp=1783555200~hmac=eb9459515ac225be878b42d0c4e74f0efe353288d7824987e86862f9b10284c2"},
+  {"slug":"lama","url":"https://pikaso.cdnpk.net/private/production/4785955438/render.png?token=exp=1783555200~hmac=b07916bb1c11d7fb238420a7192e799d73471c89e5686b640eeee05a42db5775"},
+  {"slug":"anka","url":"https://pikaso.cdnpk.net/private/production/4785955327/render.png?token=exp=1783555200~hmac=11702d59d99830f7cf95f866291898238b94bd4eee4987b4f967779ea37391a6"}
  ],
  "products": [
-  {"ad":"Lotus Aynalı|Kapı Kolu","finish":"Nikel Saten","price":"837.99","compareAtPrice":null,"hero":"assets/hero/lotus-nikel.png"},
-  {"ad":"Anka Aynalı|Kapı Kolu","finish":"Nikel Saten","price":"776.99","compareAtPrice":null,"hero":"assets/hero/anka.png"},
-  {"ad":"Lama Aynalı|Kapı Kolu","finish":"Mat Siyah","price":"219.99","compareAtPrice":"269.99","hero":"assets/hero/lama.png"},
   {"ad":"Kristal Aynalı|Kapı Kolu","finish":"Nikel Saten","price":"819.99","compareAtPrice":null,"hero":"assets/hero/kristal.png"},
-  {"ad":"Lotus Aynalı|Kapı Kolu","finish":"Mat Siyah","price":"837.99","compareAtPrice":null,"hero":"assets/hero/lotus-siyah.png"}
+  {"ad":"Lotus Aynalı|Kapı Kolu","finish":"Mat Siyah","price":"837.99","compareAtPrice":null,"hero":"assets/hero/lotus-siyah.png"},
+  {"ad":"Lotus Aynalı|Kapı Kolu","finish":"Nikel Saten","price":"837.99","compareAtPrice":null,"hero":"assets/hero/noyan.png"},
+  {"ad":"Lama Aynalı|Kapı Kolu","finish":"Mat Siyah","price":"219.99","compareAtPrice":"269.99","hero":"assets/hero/lama.png"},
+  {"ad":"Anka Aynalı|Kapı Kolu","finish":"Nikel Saten","price":"776.99","compareAtPrice":null,"hero":"assets/hero/anka.png"}
  ],
- "_run": "2026-07-04-v3"
+ "_run": "2026-07-04-v1"
 }
