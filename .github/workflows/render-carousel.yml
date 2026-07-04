@@ -55,3 +55,15 @@ jobs:
           git config user.name akzern-bot
           git config user.email bot@akzern.local
           git add arsiv/ out/ && git commit -m "render (tip) + arşiv [skip ci]" && git push || echo "değişiklik yok"
+      - name: Google Drive'a yükle (rclone, sınırlı yetki)
+        if: always()
+        env:
+          RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
+        run: |
+          if [ -z "$RCLONE_CONF" ]; then echo "RCLONE_CONF yok — Drive atlandı"; exit 0; fi
+          mkdir -p ~/.config/rclone && printf '%s' "$RCLONE_CONF" > ~/.config/rclone/rclone.conf
+          curl -fsSL -o /tmp/rc.zip https://downloads.rclone.org/rclone-current-linux-amd64.zip
+          cd /tmp && unzip -oq rc.zip && RC=$(echo /tmp/rclone-*-linux-amd64/rclone)
+          KLASOR=$(cat "$GITHUB_WORKSPACE/render/_klasor.txt")
+          "$RC" copy "$GITHUB_WORKSPACE/arsiv/$KLASOR" "drive:AKZERN Instagram/$KLASOR" --transfers 4 -v 2>&1 | tail -8 || echo "Drive yükleme hatası"
+          echo "✓ Drive: AKZERN Instagram/$KLASOR"
