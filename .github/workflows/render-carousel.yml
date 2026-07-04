@@ -17,34 +17,41 @@ jobs:
         run: |
           pip install --quiet Pillow playwright
           python -m playwright install --with-deps chromium
-      - name: İndir + kompoze + render + QA karşılaştırma
+      - name: İndir + render (tip'e göre) + QA
         run: |
           cd render
           python3 - <<'PY'
           import json, os, urllib.request
           job = json.load(open('job.json'))
-          os.makedirs('assets/cut', exist_ok=True)
+          os.makedirs('assets/cut', exist_ok=True); os.makedirs('assets/lc', exist_ok=True)
           prods = job['products']
           for p in prods:
-              urllib.request.urlretrieve(p['cutout_url'], f"assets/cut/{p['slug']}.png")
-          pj = [{"ad":p["ad"],"finish":p.get("finish",""),"price":p.get("price","0"),"compareAtPrice":p.get("compareAtPrice"),"baslik":p.get("baslik",""),"tag":p.get("tag",""),
-                 "slug":p["slug"],"kategori":p.get("kategori", job.get("kategori","AKZERN YAPI")),
+              if p.get('cutout_url'): urllib.request.urlretrieve(p['cutout_url'], f"assets/cut/{p['slug']}.png")
+              if p.get('sahne_url'):  urllib.request.urlretrieve(p['sahne_url'],  f"assets/lc/{p['slug']}.png")
+          pj = [{"ad":p["ad"],"finish":p.get("finish",""),"price":p.get("price","0"),
+                 "compareAtPrice":p.get("compareAtPrice"),"slug":p["slug"],
+                 "kategori":p.get("kategori", job.get("kategori","AKZERN YAPI")),
+                 "baslik":p.get("baslik",""),"tag":p.get("tag",""),
                  "hero":f"assets/ic/{p['slug']}.png"} for p in prods]
           json.dump(pj, open('products.json','w'), ensure_ascii=False, indent=1)
           json.dump([p['slug'] for p in prods], open('_slugs.json','w'))
           open('_tip.txt','w').write(job.get('tip','carousel')); open('_klasor.txt','w').write(job['klasor'])
           PY
-          python3 kompoze.py "$(cat _slugs.json)"
           export CHROME_BIN=$(python3 -c "from playwright.sync_api import sync_playwright; p=sync_playwright().start(); print(p.chromium.executable_path)")
           (python3 -m http.server 8791 >/dev/null 2>&1 &) ; sleep 2
-          TIP=$(cat _tip.txt); KLASOR=$(cat _klasor.txt); mkdir -p "../arsiv/$KLASOR"
-          if [ "$TIP" = "tekil" ]; then python3 uret-tekil.py products.json "../arsiv/$KLASOR"
-          elif [ "$TIP" = "lifestyle" ]; then python3 kompoze.py "$(cat _slugs.json)" lifestyle; python3 uret-lifestyle.py products.json "../arsiv/$KLASOR"
+          TIP=$(cat _tip.txt); KLASOR=$(cat _klasor.txt); SLUGS=$(cat _slugs.json); mkdir -p "../arsiv/$KLASOR"
+          if [ "$TIP" = "lifestyle" ]; then
+            python3 uret-lifestyle.py products.json "../arsiv/$KLASOR"
+          elif [ "$TIP" = "tekil" ]; then
+            python3 kompoze.py "$SLUGS"; python3 uret-tekil.py products.json "../arsiv/$KLASOR"
+          elif [ "$TIP" = "marka" ]; then
+            python3 kompoze.py "$SLUGS"; python3 uret-marka.py job.json "../arsiv/$KLASOR"
           else
+            python3 kompoze.py "$SLUGS"
             "$CHROME_BIN" --headless=new --no-sandbox --disable-gpu --hide-scrollbars --force-device-scale-factor=2 --window-size=1080,1350 --screenshot=kapak.png 'http://localhost:8791/AKZERN%20Kapak%20-%20Kapi%20Kollari.html'
             python3 uret-carousel.py products.json ../out kapak.png; cp ../out/*.png "../arsiv/$KLASOR/"
           fi
-          # QA karşılaştırma: gerçek Shopify görseli | AI kesim (form denetimi için)
+          # QA: gerçek | (AI kesim veya AI sahne)
           python3 - <<'PY'
           import json, os, urllib.request
           from PIL import Image
@@ -53,14 +60,13 @@ jobs:
           for p in job['products']:
               g=p.get('gercek_url')
               if not g: continue
+              src = f"assets/cut/{p['slug']}.png" if p.get('cutout_url') else f"assets/lc/{p['slug']}.png"
               try:
                   urllib.request.urlretrieve(g,'/tmp/real'); real=Image.open('/tmp/real').convert('RGB')
-                  cut=Image.open(f"assets/cut/{p['slug']}.png").convert('RGBA')
-                  cb=Image.new('RGB',cut.size,(255,255,255)); cb.paste(cut,(0,0),cut)
-                  ra=real.resize((int(real.width*H/real.height),H)); ca=cb.resize((int(cb.width*H/cb.height),H))
+                  ai=Image.open(src).convert('RGBA'); ab=Image.new('RGB',ai.size,(255,255,255)); ab.paste(ai,(0,0),ai)
+                  ra=real.resize((int(real.width*H/real.height),H)); ca=ab.resize((int(ab.width*H/ab.height),H))
                   comp=Image.new('RGB',(ra.width+ca.width+30,H+50),(235,235,235))
                   comp.paste(ra,(10,30)); comp.paste(ca,(ra.width+20,30)); comp.save(f"{qa}/{p['slug']}.png")
-                  print('qa', p['slug'])
               except Exception as e: print('qa hata', p['slug'], e)
           PY
           echo "=== $TIP / $KLASOR ==="; ls -la "../arsiv/$KLASOR"
