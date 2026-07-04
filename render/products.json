@@ -1,7 +1,7 @@
 [
-  {"ad":"Lotus Aynalı|Kapı Kolu","finish":"Nikel Saten","price":"837.99","compareAtPrice":null,"hero":"assets/hero/lotus-nikel.png","cip1":"1 Takım","cip2":"Vidalar Dahil"},
-  {"ad":"Anka Aynalı|Kapı Kolu","finish":"Nikel Saten","price":"776.99","compareAtPrice":null,"hero":"assets/hero/anka.png","cip1":"1 Takım","cip2":"Vidalar Dahil"},
-  {"ad":"Lama Aynalı|Kapı Kolu","finish":"Mat Siyah","price":"219.99","compareAtPrice":"269.99","hero":"assets/hero/lama.png","cip1":"1 Takım","cip2":"Vidalar Dahil"},
-  {"ad":"Kristal Aynalı|Kapı Kolu","finish":"Nikel Saten","price":"819.99","compareAtPrice":null,"hero":"assets/hero/kristal.png","cip1":"1 Takım","cip2":"Vidalar Dahil"},
-  {"ad":"Lotus Aynalı|Kapı Kolu","finish":"Mat Siyah","price":"837.99","compareAtPrice":null,"hero":"assets/hero/lotus-siyah.png","cip1":"1 Takım","cip2":"Vidalar Dahil"}
+ {"ad":"Kristal Aynalı|Kapı Kolu","finish":"Nikel Saten","price":"819.99","compareAtPrice":null,"hero":"assets/ic/kristal.png"},
+ {"ad":"Lotus Aynalı|Kapı Kolu","finish":"Mat Siyah","price":"837.99","compareAtPrice":null,"hero":"assets/ic/lotus-siyah.png"},
+ {"ad":"Noyan Aynalı|Kapı Kolu","finish":"Antrasit","price":"657.99","compareAtPrice":null,"hero":"assets/ic/noyan.png"},
+ {"ad":"Lama Aynalı|Kapı Kolu","finish":"Mat Siyah","price":"219.99","compareAtPrice":"269.99","hero":"assets/ic/lama.png"},
+ {"ad":"Anka Aynalı|Kapı Kolu","finish":"Nikel Saten","price":"776.99","compareAtPrice":null,"hero":"assets/ic/anka.png"}
 ]
