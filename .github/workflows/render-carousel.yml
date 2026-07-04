@@ -39,6 +39,7 @@ jobs:
           (python3 -m http.server 8791 >/dev/null 2>&1 &) ; sleep 2
           TIP=$(cat _tip.txt); KLASOR=$(cat _klasor.txt); mkdir -p "../arsiv/$KLASOR"
           if [ "$TIP" = "tekil" ]; then python3 uret-tekil.py products.json "../arsiv/$KLASOR"
+          elif [ "$TIP" = "lifestyle" ]; then python3 kompoze.py "$(cat _slugs.json)" lifestyle; python3 uret-lifestyle.py products.json "../arsiv/$KLASOR"
           else
             "$CHROME_BIN" --headless=new --no-sandbox --disable-gpu --hide-scrollbars --force-device-scale-factor=2 --window-size=1080,1350 --screenshot=kapak.png 'http://localhost:8791/AKZERN%20Kapak%20-%20Kapi%20Kollari.html'
             python3 uret-carousel.py products.json ../out kapak.png; cp ../out/*.png "../arsiv/$KLASOR/"
