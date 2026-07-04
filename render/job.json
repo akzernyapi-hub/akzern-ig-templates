@@ -1,25 +1,9 @@
 {
-  "tip": "tekil",
-  "kategori": "Kapı Kolu",
-  "klasor": "tekil-2026-07-04-0",
-  "products": [
-    {
-      "slug": "anka-aynali-kapi-kolu-mat-siyah",
-      "cutout_url": "https://pikaso.cdnpk.net/private/production/4788340095/render.png?token=exp=1783555200~hmac=f7c6e5cafbba7b6fae778737e696fa162a8ce0f9bf1feb7d0313c93efcb12f90",
-      "ad": "Anka Aynalı|Kapı Kolu Mat Siyah",
-      "finish": "Mat Siyah",
-      "price": "549.99",
-      "compareAtPrice": "549.99",
-      "kategori": "Kapı Kolu"
-    },
-    {
-      "slug": "anka-aynali-kapi-kolu-mat-siyah-wc",
-      "cutout_url": "https://pikaso.cdnpk.net/private/production/4788340286/render.png?token=exp=1783555200~hmac=1f8c87a53ef6a1c61396aa493abe7ffea8a1c3e20c32f480e51076bbd6521702",
-      "ad": "Anka Aynalı Kapı Kolu|Mat Siyah WC",
-      "finish": "Mat Siyah",
-      "price": "599.99",
-      "compareAtPrice": "599.99",
-      "kategori": "Kapı Kolu"
-    }
-  ]
+ "tip": "tekil",
+ "kategori": "Kapı Kolu",
+ "klasor": "tekil-2026-07-04-0",
+ "products": [
+  {"slug":"anka-aynali-kapi-kolu-mat-siyah","cutout_url":"https://pikaso.cdnpk.net/private/production/4788384207/render.png?token=exp=1783555200~hmac=d263e60d805cbf24bf1afd9732dba063aabda6a59061b8a3e11418695ea40a5f","ad":"Anka Aynalı|Kapı Kolu","finish":"Mat Siyah","price":"549.99","compareAtPrice":null,"kategori":"Kapı Kolu"},
+  {"slug":"anka-aynali-kapi-kolu-mat-siyah-wc","cutout_url":"https://pikaso.cdnpk.net/private/production/4788400801/render.png?token=exp=1783555200~hmac=5c730d9331de52f4ced53aed036006ed41ef19e600b983450b886cec4ba5298c","ad":"Anka Aynalı|Kapı Kolu WC","finish":"Mat Siyah","price":"599.99","compareAtPrice":null,"kategori":"Kapı Kolu"}
+ ]
 }
