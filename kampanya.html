@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>AKZERN Kampanya — Dinamik</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,900&display=swap" rel="stylesheet">
+<style>
+  :root{--accent:#F7911E;--accent-deep:#E07B12;--ink:#2A2620;--ink-soft:#6B6357;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:#111;display:flex;justify-content:center;font-family:'Sora',sans-serif;}
+  .post{width:1080px;height:1350px;position:relative;overflow:hidden;background:#EFE7D8;-webkit-font-smoothing:antialiased;}
+  /* ürün podyumda oturmuş hero (Magnific tek-ürün) — sabit taban */
+  .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center bottom;}
+  .veilTop{position:absolute;top:0;left:0;right:0;height:470px;background:linear-gradient(180deg,rgba(244,238,228,.92),rgba(244,238,228,0));}
+  .veilBot{position:absolute;bottom:0;left:0;right:0;height:400px;background:linear-gradient(0deg,rgba(244,238,228,.95),rgba(244,238,228,0));}
+  .topbar{position:absolute;top:52px;left:60px;right:56px;display:flex;justify-content:space-between;align-items:center;z-index:6;}
+  .logo{height:56px;}
+  .pill{background:var(--ink);color:#fff;font-weight:700;font-size:19px;padding:10px 18px;border-radius:999px;letter-spacing:.04em;}
+  .head{position:absolute;top:132px;left:64px;right:64px;text-align:center;z-index:5;}
+  .head .kk{font-size:23px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--accent-deep);}
+  .head h2{font-family:'Fraunces',serif;font-weight:700;font-size:82px;line-height:.94;color:var(--ink);margin-top:10px;letter-spacing:-.02em;}
+  .rosette{position:absolute;top:560px;left:60px;width:284px;height:284px;border-radius:50%;transform:rotate(-8deg);z-index:6;
+    background:radial-gradient(circle at 42% 38%,#F9A63F,#E07B12);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    box-shadow:0 22px 44px rgba(224,123,18,.5);border:4px solid rgba(255,255,255,.4);}
+  .rosette .t{font-size:29px;font-weight:600;letter-spacing:.06em;}
+  .rosette .b{font-family:'Fraunces',serif;font-weight:900;font-size:114px;line-height:.8;}
+  .rosette .s{font-size:25px;font-weight:700;letter-spacing:.14em;margin-top:2px;}
+  .info{position:absolute;bottom:62px;left:64px;right:64px;z-index:6;display:flex;justify-content:space-between;align-items:flex-end;}
+  .cond{font-size:22px;color:var(--ink-soft);line-height:1.4;}
+  .cond b{color:var(--ink);}
+  .cta{display:inline-flex;align-items:center;gap:13px;background:var(--accent);color:#fff;font-weight:700;font-size:26px;padding:19px 34px;border-radius:999px;box-shadow:0 14px 30px rgba(247,145,30,.4);}
+  .cta .ar{width:30px;height:30px;border-radius:50%;background:#fff;color:var(--accent);display:grid;place-items:center;font-size:18px;}
+</style>
+</head>
+<body>
+  <div class="post">
+    <img class="bg" src="assets/inner-hero.png" alt="">
+    <div class="veilTop"></div><div class="veilBot"></div>
+    <div class="topbar"><img class="logo" src="assets/akzern-logo.png"><span class="pill" id="pill">FIRSAT</span></div>
+    <div class="head"><div class="kk" id="kicker">Kapı Kollarında</div><h2 id="baslik">Sezon<br>Fırsatı</h2></div>
+    <div class="rosette"><span class="t" id="rt">SEPETTE</span><span class="b" id="rb">%30</span><span class="s" id="rs">İNDİRİM</span></div>
+    <div class="info">
+      <div class="cond"><b id="kosul1">15–31 Temmuz</b><br><span id="kosul2">tüm kapı kollarında geçerli</span></div>
+      <div class="cta">Fırsatı Yakala <span class="ar">›</span></div>
+    </div>
+  </div>
+<script>
+  const p=new URLSearchParams(location.search),S=(i,v)=>{if(v!=null){const e=document.getElementById(i);if(e)e.textContent=v}};
+  if(p.get('bg'))document.querySelector('.bg').src=p.get('bg');
+  if(p.get('baslik'))document.getElementById('baslik').innerHTML=p.get('baslik').replace(/\|/g,'<br>');
+  S('pill',p.get('pill'));S('kicker',p.get('kicker'));S('rt',p.get('rt'));S('rb',p.get('rb'));S('rs',p.get('rs'));
+  S('kosul1',p.get('kosul1'));S('kosul2',p.get('kosul2'));
+</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>AKZERN Lifestyle — Dinamik</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+<style>
+  :root{--accent:#F7911E;--accent-deep:#E07B12;--ink:#2A2620;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:#111;display:flex;justify-content:center;font-family:'Sora',sans-serif;}
+  .post{width:1080px;height:1350px;position:relative;overflow:hidden;background:#EFE7D8;-webkit-font-smoothing:antialiased;}
+  .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  .veilTop{position:absolute;top:0;left:0;right:0;height:520px;background:linear-gradient(180deg,rgba(250,247,240,.72),rgba(250,247,240,0));}
+  .veilBot{position:absolute;bottom:0;left:0;right:0;height:520px;background:linear-gradient(0deg,rgba(28,24,20,.7),rgba(28,24,20,0));}
+  .topbar{position:absolute;top:52px;left:60px;right:56px;display:flex;justify-content:space-between;align-items:center;z-index:5;}
+  .logo{height:56px;}
+  .tag{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.7);backdrop-filter:blur(4px);color:var(--accent-deep);font-weight:700;font-size:19px;padding:9px 16px;border-radius:999px;}
+  .head{position:absolute;top:150px;left:64px;right:360px;z-index:4;}
+  .head .kk{font-size:22px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--accent-deep);}
+  .head h2{font-family:'Fraunces',serif;font-weight:600;font-size:76px;line-height:1.0;color:var(--ink);margin-top:12px;letter-spacing:-.01em;}
+  .info{position:absolute;bottom:60px;left:64px;right:64px;z-index:5;display:flex;justify-content:space-between;align-items:flex-end;}
+  .info .pn{color:#fff;}
+  .info .pn .k{font-size:20px;color:#f2c48a;font-weight:600;letter-spacing:.02em;}
+  .info .pn h3{font-family:'Fraunces',serif;font-weight:600;font-size:46px;line-height:1.05;margin-top:6px;}
+  .info .pn .h{font-size:21px;color:#e7e0d2;margin-top:8px;font-weight:400;}
+  .cta{display:inline-flex;align-items:center;gap:13px;background:var(--accent);color:#fff;font-weight:700;font-size:24px;padding:17px 30px;border-radius:999px;box-shadow:0 14px 30px rgba(247,145,30,.4);}
+  .cta .ar{width:28px;height:28px;border-radius:50%;background:#fff;color:var(--accent);display:grid;place-items:center;font-size:16px;}
+</style>
+</head>
+<body>
+  <div class="post">
+    <img class="bg" src="assets/lifestyle-hero.png" alt="lifestyle">
+    <div class="veilTop"></div><div class="veilBot"></div>
+    <div class="topbar">
+      <img class="logo" src="assets/akzern-logo.png">
+      <div class="tag" id="tag">Yaşam Alanı</div>
+    </div>
+    <div class="head">
+      <div class="kk" id="kicker">Detaylarda Zarafet</div>
+      <h2 id="baslik">Kapınıza<br>Karakter Katın</h2>
+    </div>
+    <div class="info">
+      <div class="pn">
+        <div class="k" id="kategori">Kapı Kolu · ODA</div>
+        <h3 id="ad">Anka Aynalı Kapı Kolu</h3>
+        <div class="h" id="alt">Salonunuza yakışan sağlam zarafet.</div>
+      </div>
+      <div class="cta">Şimdi Keşfet <span class="ar">›</span></div>
+    </div>
+  </div>
+<script>
+  const p=new URLSearchParams(location.search),S=(i,v)=>{if(v!=null){const e=document.getElementById(i);if(e)e.textContent=v}};
+  if(p.get('bg'))document.querySelector('.bg').src=p.get('bg');
+  if(p.get('baslik'))document.getElementById('baslik').innerHTML=p.get('baslik').replace(/\|/g,'<br>');
+  S('tag',p.get('tag'));S('kicker',p.get('kicker'));S('kategori',p.get('kategori'));S('ad',p.get('ad'));S('alt',p.get('alt'));
+</script>
+</body>
+</html>
