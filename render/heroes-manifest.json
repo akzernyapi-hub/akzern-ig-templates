@@ -1,0 +1,28 @@
+{
+  "images": [
+    {
+      "url": "https://pikaso.cdnpk.net/private/production/4785249922/render.png?token=exp=1783555200~hmac=d1092ddb7c26ab02e4dfe03624605e2fd5e223363d4006d15756598627c0abfe",
+      "path": "render/assets/hero/lotus-nikel.png"
+    },
+    {
+      "url": "https://pikaso.cdnpk.net/private/production/4785249996/render.png?token=exp=1783555200~hmac=748388c44bff597b20861ffcc0e12408abc5f1d74b9eb9417028cf8ec68820c5",
+      "path": "render/assets/hero/anka.png"
+    },
+    {
+      "url": "https://pikaso.cdnpk.net/private/production/4785250381/render.png?token=exp=1783555200~hmac=97090e704118a58a0c8686750a07e6c00fa3b9e61129df3029c429cebaeb8fd5",
+      "path": "render/assets/hero/lama.png"
+    },
+    {
+      "url": "https://pikaso.cdnpk.net/private/production/4785250339/render.png?token=exp=1783555200~hmac=dd11e8cc6784e8dbc5d6249d83ee0e6c973a769a080fa76f4cdcdad78e51c5be",
+      "path": "render/assets/hero/kristal.png"
+    },
+    {
+      "url": "https://pikaso.cdnpk.net/private/production/4785250681/render.png?token=exp=1783555200~hmac=3a921bd02e8dbbcd7bd690f2e2e4cfd6231cbcc5be92e59f28cb3eb95289d09c",
+      "path": "render/assets/hero/lotus-siyah.png"
+    },
+    {
+      "url": "https://pikaso.cdnpk.net/private/production/4785251948/render.png?token=exp=1783555200~hmac=732a985df9088025d40ca716f68b27522a9c0b2f4f55ed4bef023abf7f9da447",
+      "path": "render/assets/kapak-hero-src.png"
+    }
+  ]
+}
