@@ -1,8 +1,8 @@
 {
  "tip": "lifestyle",
  "kategori": "Kapı Kolu",
- "klasor": "lifestyle-test",
+ "klasor": "lifestyle-ai-test",
  "products": [
-  {"slug":"anka","cutout_url":"https://pikaso.cdnpk.net/private/production/4788030890/render.png?token=exp=1783555200~hmac=9d6d6f958f1b589791ba4c5b22aa60f934f971af43b2f2ebd96773eab2e87823","gercek_url":"https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-9.webp","ad":"Anka Aynalı|Kapı Kolu","finish":"Nikel Saten","baslik":"Detaylarda|Zarafet","kategori":"Kapı Kolu"}
+  {"slug":"anka","sahne_url":"https://pikaso.cdnpk.net/private/production/4788517158/render.png?token=exp=1783555200~hmac=67a01cb22473898424c9ab753db3b29ff9c2bceea17c8a7b12b3aca00c120b11","gercek_url":"https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-9.webp","ad":"Anka Aynalı Kapı Kolu","finish":"Mat Siyah","baslik":"Kapınızın|İmzası","kategori":"Kapı Kolu"}
  ]
 }
