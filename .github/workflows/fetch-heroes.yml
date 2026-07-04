@@ -24,6 +24,6 @@ jobs:
         run: |
           git config user.name "akzern-bot"
           git config user.email "bot@akzern.local"
-          git add render/assets/hero/ 2>/dev/null || true
+          git add render/assets/ 2>/dev/null || true
           git commit -m "heroes: manifestten indirildi [skip ci]" || { echo "değişiklik yok"; exit 0; }
           git push
