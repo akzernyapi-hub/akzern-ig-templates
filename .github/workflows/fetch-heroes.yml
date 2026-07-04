@@ -1,0 +1,29 @@
+name: fetch-heroes
+on:
+  push:
+    paths: ['render/heroes-manifest.json']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Manifestteki görselleri indir (runner açık internet -> pikaso erişir)
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request
+          m = json.load(open('render/heroes-manifest.json'))
+          for it in m.get('images', []):
+              os.makedirs(os.path.dirname(it['path']), exist_ok=True)
+              urllib.request.urlretrieve(it['url'], it['path'])
+              print('indirildi:', it['path'], os.path.getsize(it['path']), 'byte')
+          PY
+      - name: Repoya commit et
+        run: |
+          git config user.name "akzern-bot"
+          git config user.email "bot@akzern.local"
+          git add render/assets/hero/ 2>/dev/null || true
+          git commit -m "heroes: manifestten indirildi [skip ci]" || { echo "değişiklik yok"; exit 0; }
+          git push
