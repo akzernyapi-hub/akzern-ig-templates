@@ -1,0 +1,27 @@
+{
+  "marka": "AKZERN YAPI",
+  "kategoriler": [
+    {"key":"kapi-kollari","ad":"Kapı Kolları","label":"Kapı Kolu","koleksiyonlar":["aynali-kapi-kollari","kapi-kollari","kapi-kolu"],
+     "urun_aciklama":"a single mirrored/lever door handle mounted on its wide vertical rectangular backplate, standing upright",
+     "kapak_baslik":"Zarafeti|Kapınıza Taşıyın"},
+    {"key":"kulplar","ad":"Mobilya Kulpları","label":"Mobilya Kulpu","koleksiyonlar":["genel-kulplar","dugme-kulplar"],
+     "urun_aciklama":"a single furniture cabinet handle or knob (drawer/cabinet pull), shown from the front",
+     "kapak_baslik":"Mobilyanıza|İmza Atın"},
+    {"key":"kilitler","ad":"Kilitler & Güvenlik","label":"Kilit","koleksiyonlar":["kapi-kilitleri","daire-kilitleri","celik-kapi-kilitleri","gomme-kapi-kilitleri","asma-kilitler","emniyet-kilitleri"],
+     "urun_aciklama":"a single door lock / cylinder lock / padlock body, shown from the front",
+     "kapak_baslik":"Güvenliğiniz|Emin Ellerde"},
+    {"key":"menteseler","ad":"Menteşeler","label":"Menteşe","koleksiyonlar":["kapi-menteseleri"],
+     "urun_aciklama":"a single door hinge, shown from the front",
+     "kapak_baslik":"Sağlam|Bağlantılar"},
+    {"key":"askiliklar","ad":"Askılıklar","label":"Askılık","koleksiyonlar":["askiliklar","banyo-askisi"],
+     "urun_aciklama":"a single wall-mounted coat hook / towel hook / bathroom hanger",
+     "kapak_baslik":"Düzenin|Şık Hali"},
+    {"key":"kapi-cekmeler","ad":"Kapı Çekmeleri","label":"Kapı Çekme","koleksiyonlar":["kapi-cekmeler"],
+     "urun_aciklama":"a single door pull handle / gate pull bar, shown from the front",
+     "kapak_baslik":"Modern|Dokunuşlar"},
+    {"key":"cekmece-raylari","ad":"Çekmece Rayları","label":"Çekmece Rayı","koleksiyonlar":["cekmece-raylari"],
+     "urun_aciklama":"a single drawer slide / telescopic runner rail, shown from the side",
+     "kapak_baslik":"Kusursuz|Kayma"}
+  ],
+  "tempo": {"gunluk_tekil_post": 2, "carousel_gunu": "Pazartesi", "marka_gunu": "Cuma"}
+}
