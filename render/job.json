@@ -1,8 +1,15 @@
 {
- "tip": "lifestyle",
- "kategori": "Kapı Kolu",
- "klasor": "lifestyle-ai-test",
+ "tip": "marka",
+ "kategori": "Kapı Kolları",
+ "klasor": "marka-test",
+ "baslik": "Yapının|Sağlam İsmi",
+ "slogan": "Zarafet · Güven · Kalite",
+ "kicker": "AKZERN YAPI",
  "products": [
-  {"slug":"anka","sahne_url":"https://pikaso.cdnpk.net/private/production/4788517158/render.png?token=exp=1783555200~hmac=67a01cb22473898424c9ab753db3b29ff9c2bceea17c8a7b12b3aca00c120b11","gercek_url":"https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-9.webp","ad":"Anka Aynalı Kapı Kolu","finish":"Mat Siyah","baslik":"Kapınızın|İmzası","kategori":"Kapı Kolu"}
+  {"slug":"kristal","cutout_url":"https://pikaso.cdnpk.net/private/production/4788029856/render.png?token=exp=1783555200~hmac=ab1a2eff1b124c9c8cb43ee274ae8de653e3d3b96113e3ac459a3c969aecf81c"},
+  {"slug":"lotus-siyah","cutout_url":"https://pikaso.cdnpk.net/private/production/4788030107/render.png?token=exp=1783555200~hmac=f2d342412ebb365d6c263c35f29c21c44139c538dc82842ac08df1473f9a0fd4"},
+  {"slug":"noyan","cutout_url":"https://pikaso.cdnpk.net/private/production/4788175248/render.png?token=exp=1783555200~hmac=df29759b861b3245f5eedd56f58e0c86b7136e06d88da31df56f42166002ff0b"},
+  {"slug":"lama","cutout_url":"https://pikaso.cdnpk.net/private/production/4788030619/render.png?token=exp=1783555200~hmac=7a716cfc05d93e32e2a8ac3a4b4ffb11be58d0f9405fdb5e67f740db99362842"},
+  {"slug":"anka","cutout_url":"https://pikaso.cdnpk.net/private/production/4788030890/render.png?token=exp=1783555200~hmac=9d6d6f958f1b589791ba4c5b22aa60f934f971af43b2f2ebd96773eab2e87823"}
  ]
 }
