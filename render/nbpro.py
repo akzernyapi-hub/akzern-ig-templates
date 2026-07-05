@@ -23,7 +23,9 @@ def _call(image_urls, prompt, out, ar="4:5"):
 SINGLE_P = ("Take the empty cream podium scene from the FIRST image and keep it 100% identical (podium, background, lighting, orange ring). "
   "Take the product from the SECOND image and place ONE single item standing UPRIGHT on top of the podium, LARGE and prominent, filling the center, "
   "firmly grounded on the podium surface with a natural soft contact shadow. The product MUST be 100% IDENTICAL to the second image — "
-  "exact shape, lever, backplate, screws, slot, holes and finish; do NOT redesign, do NOT make a pair. Photorealistic, keep the upper area empty for a headline.")
+  "exact shape, lever, backplate, screws, slot, holes AND EXACT COLOR/FINISH. "
+  "CRITICAL COLOR RULE: preserve the exact original finish and color from the source photo — if it is matte black it must stay PURE MATTE BLACK (never blue, navy, grey or teal); if nickel/satin keep that exact metal tone. Do NOT shift or recolor the finish. "
+  "Do NOT redesign, do NOT make a pair. Photorealistic, keep the upper area empty for a headline.")
 
 CLUSTER_P = ("Take the empty cream/terracotta clustered podium scene from the FIRST image and keep it 100% identical. "
   "Place EACH of the following product images (one per remaining image) standing UPRIGHT and grounded on top of one of the podiums, LARGE and prominent, "
