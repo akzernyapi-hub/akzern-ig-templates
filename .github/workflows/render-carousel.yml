@@ -28,7 +28,7 @@ jobs:
           for p in prods:
               if p.get('cutout_url'): urllib.request.urlretrieve(p['cutout_url'], f"assets/cut/{p['slug']}.png")
               if p.get('sahne_url'):  urllib.request.urlretrieve(p['sahne_url'],  f"assets/lc/{p['slug']}.png")
-          pj = [{"ad":p["ad"],"finish":p.get("finish",""),"price":p.get("price","0"),
+          pj = [{"ad":p.get("ad",""),"finish":p.get("finish",""),"price":p.get("price","0"),
                  "compareAtPrice":p.get("compareAtPrice"),"slug":p["slug"],
                  "kategori":p.get("kategori", job.get("kategori","AKZERN YAPI")),
                  "baslik":p.get("baslik",""),"tag":p.get("tag",""),
