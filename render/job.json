@@ -1,27 +1,8 @@
 {
  "tip": "tekil",
- "kategori": "Kapı Kolu",
- "klasor": "tekil-2026-07-05-0",
+ "kategori": "Kapı Kolu · ODA",
+ "klasor": "nbpro-test",
  "products": [
-  {
-   "slug": "lotus-aynali-mat-siyah",
-   "cutout_url": "https://pikaso.cdnpk.net/private/production/4789261327/render.png?token=exp=1783555200~hmac=f5c80215c226058c7309d0f1b057c51a2fec16b2f47acea78819059847d49cf8",
-   "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-306.jpg?v=1759497675",
-   "ad": "LOTUS AYNALI|MAT SİYAH",
-   "finish": "Mat Siyah",
-   "price": "675.00",
-   "compareAtPrice": null,
-   "kategori": "Kapı Kolu"
-  },
-  {
-   "slug": "lotus-aynali-nikel-saten",
-   "cutout_url": "https://pikaso.cdnpk.net/private/production/4789271465/render.png?token=exp=1783555200~hmac=05e7387d56014efd62955170d5cc951b0b98473d404a462c704cf68a3ec1a19d",
-   "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/8cede2e3-image_1950-313.jpg?v=1759248245",
-   "ad": "LOTUS AYNALI|NİKEL SATEN",
-   "finish": "Nikel Saten",
-   "price": "675.00",
-   "compareAtPrice": null,
-   "kategori": "Kapı Kolu"
-  }
+  {"slug":"anka","gercek_url":"https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-9.webp","ad":"Anka Aynalı|Kapı Kolu","finish":"Mat Siyah","price":"549.99","compareAtPrice":null}
  ]
 }
