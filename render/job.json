@@ -1,8 +1,13 @@
 {
- "tip": "tekil",
- "kategori": "Kapı Kolu · ODA",
- "klasor": "nbpro-test",
+ "tip": "carousel",
+ "kategori": "Kapı Kolları",
+ "klasor": "carousel-kapikollari",
+ "kapak_baslik": "Zarafeti|Kapınıza Taşıyın",
  "products": [
-  {"slug":"anka","gercek_url":"https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-9.webp","ad":"Anka Aynalı|Kapı Kolu","finish":"Mat Siyah","price":"549.99","compareAtPrice":null}
+  {"slug":"anka-oda","gercek_url":"https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-9.webp","ad":"Anka Aynalı|Kapı Kolu","finish":"Mat Siyah","price":"749.99","compareAtPrice":null,"kategori":"Kapı Kolu · ODA"},
+  {"slug":"lotus-wc","gercek_url":"https://cdn.shopify.com/s/files/1/0938/5957/8140/files/aa35dae5-image_1950-301.jpg","ad":"Lotus Aynalı|Kapı Kolu","finish":"Mat Siyah · WC","price":"961.99","compareAtPrice":null,"kategori":"Kapı Kolu · WC"},
+  {"slug":"kristal-yale","gercek_url":"https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-286.jpg","ad":"Kristal Aynalı|Kapı Kolu","finish":"Nikel Saten","price":"819.99","compareAtPrice":null,"kategori":"Kapı Kolu · YALE"},
+  {"slug":"lotus-oda","gercek_url":"https://cdn.shopify.com/s/files/1/0938/5957/8140/files/8cede2e3-image_1950-313.jpg","ad":"Lotus Aynalı|Kapı Kolu","finish":"Nikel Saten","price":"837.99","compareAtPrice":null,"kategori":"Kapı Kolu · ODA"},
+  {"slug":"noyan-oda","gercek_url":"https://cdn.shopify.com/s/files/1/0938/5957/8140/files/NOYAN-ODA2-scaled.jpg","ad":"Noyan Aynalı|Kapı Kolu","finish":"Mat Antrasit","price":"657.99","compareAtPrice":null,"kategori":"Kapı Kolu · ODA"}
  ]
 }

@@ -28,9 +28,11 @@ SINGLE_P = ("Take the empty cream podium scene from the FIRST image and keep it 
   "Do NOT redesign, do NOT make a pair. Photorealistic, keep the upper area empty for a headline.")
 
 CLUSTER_P = ("Take the empty cream/terracotta clustered podium scene from the FIRST image and keep it 100% identical. "
-  "Place EACH of the following product images (one per remaining image) standing UPRIGHT and grounded on top of one of the podiums, LARGE and prominent, "
-  "arranged across the cluster, each firmly grounded with natural contact shadows. Each product MUST be 100% IDENTICAL to its source image — "
-  "exact shape, lever, plate, screws, finish; do NOT redesign, one item per podium. Photorealistic, keep the upper area empty for a headline.")
+  "Place the following door handles onto the podiums: EXACTLY ONE single handle standing UPRIGHT and VERTICAL on EACH podium like a luxury showroom, "
+  "each handle BIG and DETAILED filling most of its podium height, firmly grounded standing on the podium top with a soft contact shadow. "
+  "STRICT: NO pairs (one handle per podium), NO lying or horizontal handles (all vertical, standing). "
+  "COLOR RULE: preserve each handle's EXACT finish — matte black stays PURE MATTE BLACK (never blue/navy/teal), nickel stays nickel. "
+  "Each handle 100% IDENTICAL to its reference image (exact lever, backplate, screws, slot, finish); do NOT redesign or merge. Photorealistic, keep the upper area empty for a headline.")
 
 def single(product_url, out, template="ic.png"):
     _call([_uri(f"{SB}/{template}"), product_url], SINGLE_P, out)
