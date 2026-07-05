@@ -48,7 +48,9 @@ jobs:
             python3 kompoze.py "$SLUGS"; python3 uret-marka.py job.json "../arsiv/$KLASOR"
           else
             python3 kompoze.py "$SLUGS"
-            "$CHROME_BIN" --headless=new --no-sandbox --disable-gpu --hide-scrollbars --force-device-scale-factor=2 --window-size=1080,1350 --screenshot=kapak.png 'http://localhost:8791/AKZERN%20Kapak%20-%20Kapi%20Kollari.html'
+            BASLIK=$(python3 -c "import json,urllib.parse as u;j=json.load(open('job.json'));print(u.quote(j.get('kapak_baslik','Zarafeti|Kapınıza Taşıyın')))")
+            KK=$(python3 -c "import json,urllib.parse as u;j=json.load(open('job.json'));print(u.quote('AKZERN YAPI · '+j.get('kategori','')))")
+            "$CHROME_BIN" --headless=new --no-sandbox --disable-gpu --hide-scrollbars --force-device-scale-factor=2 --window-size=1080,1350 --screenshot=kapak.png "http://localhost:8791/AKZERN%20Kapak%20-%20Kapi%20Kollari.html?baslik=$BASLIK&kk=$KK" 
             python3 uret-carousel.py products.json ../out kapak.png; cp ../out/*.png "../arsiv/$KLASOR/"
           fi
           # QA: gerçek | (AI kesim veya AI sahne)

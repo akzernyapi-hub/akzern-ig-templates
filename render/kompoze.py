@@ -9,6 +9,8 @@ HERE = os.path.dirname(os.path.abspath(__file__)); A = os.path.join(HERE, "asset
 COVER_SLOTS = [(135,805,300),(330,840,290),(540,782,320),(730,840,290),(925,805,300)]
 
 def fit(im, h):
+    bb = im.split()[3].getbbox()
+    if bb: im = im.crop(bb)
     w = int(im.width*h/im.height); return im.resize((w, h)), w
 
 def cover(slugs, out):
