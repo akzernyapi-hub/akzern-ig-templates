@@ -14,11 +14,24 @@ def _uri(path):
     return "data:image/jpeg;base64," + base64.b64encode(b.getvalue()).decode()
 
 def _call(image_urls, prompt, out, ar="4:5"):
+    import time
     body = json.dumps({"prompt": prompt, "image_urls": image_urls, "aspect_ratio": ar, "num_images": 1}).encode()
-    req = urllib.request.Request("https://fal.run/fal-ai/nano-banana-pro/edit", data=body,
-        headers={"Authorization": f"Key {KEY}", "Content-Type": "application/json"})
-    r = json.load(urllib.request.urlopen(req, timeout=240))
-    urllib.request.urlretrieve(r["images"][0]["url"], out)
+    last = None
+    for attempt in range(4):
+        try:
+            req = urllib.request.Request("https://fal.run/fal-ai/nano-banana-pro/edit", data=body,
+                headers={"Authorization": f"Key {KEY}", "Content-Type": "application/json"})
+            r = json.load(urllib.request.urlopen(req, timeout=240))
+            u = r["images"][0]["url"]
+            for d in range(3):
+                try:
+                    urllib.request.urlretrieve(u, out); return
+                except Exception as e:
+                    last = e; time.sleep(3)
+            raise last
+        except Exception as e:
+            last = e; time.sleep(5 * (attempt + 1))
+    raise last
 
 SINGLE_P = ("Take the empty cream podium scene from the FIRST image and keep it 100% identical (podium, background, lighting, orange ring). "
   "Take the product from the SECOND image and place ONE single item standing UPRIGHT on top of the podium, LARGE and prominent, filling the center, "
