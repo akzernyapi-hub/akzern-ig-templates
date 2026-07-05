@@ -1,0 +1,36 @@
+name: publish-instagram
+on:
+  push:
+    paths: ['render/publish-job.json']
+  workflow_dispatch:
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Instagram'a yayınla (Graph API)
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: |
+          if [ -z "$IG_TOKEN" ] || [ -z "$IG_USER_ID" ]; then echo "IG_TOKEN/IG_USER_ID yok — yayın atlandı (token bekleniyor)"; exit 0; fi
+          python3 - <<'PY'
+          import json, os, urllib.request, urllib.parse, time
+          job=json.load(open('render/publish-job.json'))
+          T=os.environ['IG_TOKEN']; U=os.environ['IG_USER_ID']; BASE=f"https://graph.facebook.com/v21.0/{U}"
+          def post(path, data):
+              data['access_token']=T
+              req=urllib.request.Request(BASE+path, data=urllib.parse.urlencode(data).encode())
+              return json.load(urllib.request.urlopen(req))
+          imgs=job['image_urls']; cap=job.get('caption','')
+          if len(imgs)==1:
+              c=post("/media", {"image_url":imgs[0],"caption":cap}); time.sleep(4)
+              r=post("/media_publish", {"creation_id":c['id']})
+          else:
+              kids=[]
+              for u in imgs:
+                  c=post("/media", {"image_url":u,"is_carousel_item":"true"}); kids.append(c['id']); time.sleep(2)
+              car=post("/media", {"media_type":"CAROUSEL","children":",".join(kids),"caption":cap}); time.sleep(4)
+              r=post("/media_publish", {"creation_id":car['id']})
+          print("✓ yayınlandı:", r)
+          PY
