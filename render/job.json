@@ -1,10 +1,53 @@
 {
- "tip":"carousel","kategori":"Mobilya Kulpları","klasor":"test-kulplar",
- "products":[
-  {"slug":"mantar","cutout_url":"https://pikaso.cdnpk.net/private/production/4788593055/render.png?token=exp=1783555200~hmac=41e93449c0d033d4fc84d1289db4c60874b7f893b504134b6141c4ef57535497","gercek_url":"https://cdn.shopify.com/s/files/1/0938/5957/8140/files/238-mantar-dugme-8-1768775626.jpg","ad":"Mantar Düğme|Meşe","finish":"Meşe","price":"21.99","compareAtPrice":null},
-  {"slug":"kalin-yay","cutout_url":"https://pikaso.cdnpk.net/private/production/4788593216/render.png?token=exp=1783555200~hmac=fb55e6797e04a51e9656c812dadf9e4a44c2b8bbfd2ea1c5456206cae1737328","gercek_url":"https://cdn.shopify.com/s/files/1/0938/5957/8140/files/kalin-yay-beyaz-1768777097.png","ad":"Kalın Yay|Kulp Beyaz","finish":"Beyaz 96mm","price":"72.99","compareAtPrice":null},
-  {"slug":"fokus","cutout_url":"https://pikaso.cdnpk.net/private/production/4788593439/render.png?token=exp=1783555200~hmac=371f7bb1173e22572637215ea9151e4b42f874da26b9aeb99bfd35c6cc8cf601","gercek_url":"https://cdn.shopify.com/s/files/1/0938/5957/8140/files/fokus_inox.png","ad":"Fokus|İnox","finish":"İnox","price":"120.00","compareAtPrice":null},
-  {"slug":"yeti-sari","cutout_url":"https://pikaso.cdnpk.net/private/production/4788593667/render.png?token=exp=1783555200~hmac=6abecd64530dc03b83d2a3227f2f071eb719e5205bdddf5bd42d04a0efabf887","gercek_url":"https://cdn.shopify.com/s/files/1/0938/5957/8140/files/yeti_sari_v2.png","ad":"Yeti|Antik Sarı","finish":"Antik Sarı","price":"110.00","compareAtPrice":null},
-  {"slug":"yeti-siyah","cutout_url":"https://pikaso.cdnpk.net/private/production/4788593841/render.png?token=exp=1783555200~hmac=09377c08a48ea4dc37230bd4d42e9234e8b92881cfb3f07155daf60dab4e5312","gercek_url":"https://cdn.shopify.com/s/files/1/0938/5957/8140/files/yeti_siyah.png","ad":"Yeti|Mat Siyah","finish":"Mat Siyah","price":"110.00","compareAtPrice":null}
- ]
+ "tip": "carousel",
+ "kategori": "Mobilya Kulpları",
+ "klasor": "test-kulplar",
+ "products": [
+  {
+   "slug": "mantar",
+   "cutout_url": "https://pikaso.cdnpk.net/private/production/4788593055/render.png?token=exp=1783555200~hmac=41e93449c0d033d4fc84d1289db4c60874b7f893b504134b6141c4ef57535497",
+   "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/238-mantar-dugme-8-1768775626.jpg",
+   "ad": "Mantar Düğme|Meşe",
+   "finish": "Meşe",
+   "price": "21.99",
+   "compareAtPrice": null
+  },
+  {
+   "slug": "kalin-yay",
+   "cutout_url": "https://pikaso.cdnpk.net/private/production/4788593216/render.png?token=exp=1783555200~hmac=fb55e6797e04a51e9656c812dadf9e4a44c2b8bbfd2ea1c5456206cae1737328",
+   "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/kalin-yay-beyaz-1768777097.png",
+   "ad": "Kalın Yay|Kulp Beyaz",
+   "finish": "Beyaz 96mm",
+   "price": "72.99",
+   "compareAtPrice": null
+  },
+  {
+   "slug": "fokus",
+   "cutout_url": "https://pikaso.cdnpk.net/private/production/4788593439/render.png?token=exp=1783555200~hmac=371f7bb1173e22572637215ea9151e4b42f874da26b9aeb99bfd35c6cc8cf601",
+   "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/fokus_inox.png",
+   "ad": "Fokus|İnox",
+   "finish": "İnox",
+   "price": "120.00",
+   "compareAtPrice": null
+  },
+  {
+   "slug": "yeti-sari",
+   "cutout_url": "https://pikaso.cdnpk.net/private/production/4788593667/render.png?token=exp=1783555200~hmac=6abecd64530dc03b83d2a3227f2f071eb719e5205bdddf5bd42d04a0efabf887",
+   "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/yeti_sari_v2.png",
+   "ad": "Yeti|Antik Sarı",
+   "finish": "Antik Sarı",
+   "price": "110.00",
+   "compareAtPrice": null
+  },
+  {
+   "slug": "yeti-siyah",
+   "cutout_url": "https://pikaso.cdnpk.net/private/production/4788593841/render.png?token=exp=1783555200~hmac=09377c08a48ea4dc37230bd4d42e9234e8b92881cfb3f07155daf60dab4e5312",
+   "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/yeti_siyah.png",
+   "ad": "Yeti|Mat Siyah",
+   "finish": "Mat Siyah",
+   "price": "110.00",
+   "compareAtPrice": null
+  }
+ ],
+ "kapak_baslik": "Mobilyanıza|İmza Atın"
 }
