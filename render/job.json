@@ -1,13 +1,13 @@
 {
  "tip": "carousel",
  "kategori": "Kapı Kolları",
- "klasor": "carousel-kapikollari",
+ "klasor": "2026-07-06-kapi-kollari",
  "kapak_baslik": "Zarafeti|Kapınıza Taşıyın",
  "products": [
-  {"slug":"anka-oda","gercek_url":"https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-9.webp","ad":"Anka Aynalı|Kapı Kolu","finish":"Mat Siyah","price":"749.99","compareAtPrice":null,"kategori":"Kapı Kolu · ODA"},
-  {"slug":"lotus-wc","gercek_url":"https://cdn.shopify.com/s/files/1/0938/5957/8140/files/aa35dae5-image_1950-301.jpg","ad":"Lotus Aynalı|Kapı Kolu","finish":"Mat Siyah · WC","price":"961.99","compareAtPrice":null,"kategori":"Kapı Kolu · WC"},
-  {"slug":"kristal-yale","gercek_url":"https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-286.jpg","ad":"Kristal Aynalı|Kapı Kolu","finish":"Nikel Saten","price":"819.99","compareAtPrice":null,"kategori":"Kapı Kolu · YALE"},
-  {"slug":"lotus-oda","gercek_url":"https://cdn.shopify.com/s/files/1/0938/5957/8140/files/8cede2e3-image_1950-313.jpg","ad":"Lotus Aynalı|Kapı Kolu","finish":"Nikel Saten","price":"837.99","compareAtPrice":null,"kategori":"Kapı Kolu · ODA"},
-  {"slug":"noyan-oda","gercek_url":"https://cdn.shopify.com/s/files/1/0938/5957/8140/files/NOYAN-ODA2-scaled.jpg","ad":"Noyan Aynalı|Kapı Kolu","finish":"Mat Antrasit","price":"657.99","compareAtPrice":null,"kategori":"Kapı Kolu · ODA"}
+  {"slug":"sofuoglu-anka-mat-siyah","cutout_url":"https://pikaso.cdnpk.net/private/production/4794564936/render.png?token=exp=1783555200~hmac=4b97587448bd275e35ef390de0257025a4a83a5f2704d19b136e61eadf837282","gercek_url":"https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-9.webp?v=1759498947","ad":"Sofuoğlu Anka|Kapı Kolu","finish":"Mat Siyah","price":"749.99","compareAtPrice":null},
+  {"slug":"sofuoglu-anka-mat-siyah-wc","cutout_url":"https://pikaso.cdnpk.net/private/production/4794565225/render.png?token=exp=1783555200~hmac=253c5138c3afd4d9c6b3220e51be9490777ef69e10cb6e6e5cb96a2383150e72","gercek_url":"https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-10.webp?v=1759498244","ad":"Sofuoğlu Anka WC|Kapı Kolu","finish":"Mat Siyah WC","price":"599.99","compareAtPrice":null},
+  {"slug":"lotus-mat-siyah","cutout_url":"https://pikaso.cdnpk.net/private/production/4794565555/render.png?token=exp=1783555200~hmac=81fb4c419d23ecb4bb2c7c65d40579ed5c1683629e9c3ed62f27d89890453d3d","gercek_url":"https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-306.jpg?v=1759497675","ad":"Lotus|Kapı Kolu","finish":"Mat Siyah","price":"675.00","compareAtPrice":null},
+  {"slug":"lotus-nikel-saten","cutout_url":"https://pikaso.cdnpk.net/private/production/4794565880/render.png?token=exp=1783555200~hmac=1667bdfb940f03168041137c21dba64648c0ce914265028b74256c013fb13a98","gercek_url":"https://cdn.shopify.com/s/files/1/0938/5957/8140/files/8cede2e3-image_1950-313.jpg?v=1759248245","ad":"Lotus Nikel|Kapı Kolu","finish":"Nikel Saten","price":"675.00","compareAtPrice":null},
+  {"slug":"kristal-nikel-saten","cutout_url":"https://pikaso.cdnpk.net/private/production/4794567635/render.png?token=exp=1783555200~hmac=304a6da34a5550cf67b0c391b538ac1a153b2d864add1c72b719afa7205bc448","gercek_url":"https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-283.jpg?v=1759497649","ad":"Kristal|Kapı Kolu","finish":"Nikel Saten","price":"675.00","compareAtPrice":null}
  ]
 }
