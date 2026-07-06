@@ -56,6 +56,24 @@ def cluster(product_urls, out, template="kapak-kollar.png"):
 def lifestyle(product_url, scene_prompt, out):
     _call([product_url], scene_prompt, out)
 
+PACKSHOT_P = ("Product photo: place the EXACT door handle from the image standing perfectly UPRIGHT and VERTICAL, centered on a plain pure white seamless studio background, large and sharp, soft shadow. ONE single handle only, no pair. "
+  "Keep it 100% identical including EXACT finish — matte black stays PURE MATTE BLACK (never blue/navy), nickel stays nickel. Photorealistic e-commerce packshot.")
+
+def packshot(product_url, out):
+    _call([product_url], PACKSHOT_P, out, ar="3:4")
+
+def rembg(path, out):
+    import time
+    b = json.dumps({"image_url": _uri(path)}).encode()
+    for a in range(3):
+        try:
+            req = urllib.request.Request("https://fal.run/fal-ai/birefnet/v2", data=b,
+                headers={"Authorization": f"Key {KEY}", "Content-Type": "application/json"})
+            r = json.load(urllib.request.urlopen(req, timeout=120)); urllib.request.urlretrieve(r["image"]["url"], out); return
+        except Exception as e:
+            last = e; time.sleep(4)
+    raise last
+
 if __name__ == "__main__":
     # CLI: nbpro.py single <product_url> <out> [template]  |  cluster <out> <template> <url1..>  |  lifestyle <url> <out> <prompt>
     mode = sys.argv[1]
