@@ -33,12 +33,18 @@ def _call(image_urls, prompt, out, ar="4:5"):
             last = e; time.sleep(5 * (attempt + 1))
     raise last
 
-SINGLE_P = ("Take the empty cream podium scene from the FIRST image and keep it 100% identical (podium, background, lighting, orange ring). "
-  "Take the product from the SECOND image and place ONE single item standing UPRIGHT on top of the podium, LARGE and prominent, filling the center, "
-  "firmly grounded on the podium surface with a natural soft contact shadow. The product MUST be 100% IDENTICAL to the second image — "
-  "exact shape, lever, backplate, screws, slot, holes AND EXACT COLOR/FINISH. "
-  "CRITICAL COLOR RULE: preserve the exact original finish and color from the source photo — if it is matte black it must stay PURE MATTE BLACK (never blue, navy, grey or teal); if nickel/satin keep that exact metal tone. Do NOT shift or recolor the finish. "
+# KATEGORİ-DUYARLI tekil prompt: {tip}=ürün tipi tarifi, {durus}=podyumdaki duruş. config.json'dan gelir.
+SINGLE_TMPL = ("Take the empty cream podium scene from the FIRST image and keep it 100% identical (podium, background, lighting, orange ring). "
+  "Take the {tip} from the SECOND image and place ONE single piece {durus}, LARGE and prominent, filling the center, with a natural soft contact shadow. "
+  "The product MUST be 100% IDENTICAL to the second image — exact shape, profile, parts, screws/posts, holes/slot AND EXACT COLOR/FINISH. "
+  "CRITICAL COLOR RULE: preserve the exact original finish and color from the source photo — matte black stays PURE MATTE BLACK (never blue/navy/grey/teal); nickel/satin/chrome keeps that exact metal tone. Do NOT shift or recolor. "
   "Do NOT redesign, do NOT make a pair. Photorealistic, keep the upper area empty for a headline.")
+
+# Varsayılan duruşlar (kategori duruş vermezse)
+DURUS = {
+  "dik": "standing perfectly UPRIGHT and VERTICAL on top of the podium, its base firmly PLANTED and GROUNDED on the podium surface (never floating)",
+  "slas": "oriented DIAGONALLY like a forward slash '/', tilted to the RIGHT about 35 degrees, HOVERING and floating a little ABOVE the podium (elegant levitating product shot, not lying flat, not resting), with a soft shadow cast on the podium below",
+}
 
 # ★ KİLİTLİ KAZANAN COVER PROMPTU (2026-07-07 kullanıcı onayı) — DEĞİŞTİRME
 # fal NB Pro edit: image_urls=[KİLİTLİ boş cluster şablonu, ürün1..5] + bu prompt.
@@ -52,8 +58,10 @@ CLUSTER_P = ("The FIRST image is a fixed studio scene with empty cream and terra
   "matte black stays PURE MATTE BLACK (never blue/navy); nickel/satin stays that exact metal tone; do NOT redesign, distort, merge or make pairs. "
   "Photorealistic premium studio product photography. Keep the upper third of the image emptier for a headline.")
 
-def single(product_url, out, template="ic.png"):
-    _call([_uri(f"{SB}/{template}"), product_url], SINGLE_P, out)
+def single(product_url, out, template="ic.png", tip="door handle", durus="dik"):
+    d = DURUS.get(durus, durus)  # anahtar ('dik'/'slas') ya da doğrudan metin
+    prompt = SINGLE_TMPL.format(tip=tip, durus=d)
+    _call([_uri(f"{SB}/{template}"), product_url], prompt, out)
 
 def cluster(product_urls, out, template="kapak-kollar.png"):
     _call([_uri(f"{SB}/{template}")] + list(product_urls), CLUSTER_P, out)

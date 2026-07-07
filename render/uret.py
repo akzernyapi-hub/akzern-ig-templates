@@ -76,7 +76,7 @@ def main():
              {"hero": "assets/kapak-hero.png", "baslik": job.get("kapak_baslik", "Zarafeti|Kapınıza Taşıyın"),
               "kk": "AKZERN YAPI · "+job.get("kategori", "")}, f"{out}/01.png")
         for i, p in enumerate(prods, start=2):
-            h = f"{A}/hero-{p['slug']}.png"; nbpro.single(p["gercek_url"], h, "ic.png"); cover_crop(h)
+            h = f"{A}/hero-{p['slug']}.png"; nbpro.single(p["gercek_url"], h, "ic.png", p.get("tip","door handle"), p.get("durus","dik")); cover_crop(h)
             f = urun_params(p, f"{i} / {len(prods)+1} ›"); f["hero"] = f"assets/hero-{p['slug']}.png"
             shot(KAL, f, f"{out}/{i:02d}.png")
     elif tip == "lifestyle":
@@ -92,7 +92,7 @@ def main():
     else:  # tekil
         tpl = "kampanya.png" if job.get("kampanya") else "ic.png"
         for p in prods:
-            h = f"{A}/hero-{p['slug']}.png"; nbpro.single(p["gercek_url"], h, tpl); cover_crop(h)
+            h = f"{A}/hero-{p['slug']}.png"; nbpro.single(p["gercek_url"], h, tpl, p.get("tip","door handle"), p.get("durus","dik")); cover_crop(h)
             f = urun_params(p); f["hero"] = f"assets/hero-{p['slug']}.png"
             shot(KAL, f, f"{out}/{p['slug']}.png")
     print("uret ok:", tip, klasor)

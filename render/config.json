@@ -2,38 +2,124 @@
   "marka": "AKZERN YAPI",
   "lifestyle_kural": "The uploaded product image is the single source of truth. Never redesign the product; never change dimensions, proportions, finish, color, material or geometry; never add decorative details; never hallucinate missing parts. Only place the EXACT product into the environment, correctly installed; the product is always the hero. Keep the upper third calmer/lighter for a headline. Photorealistic, indistinguishable from a professional commercial product photoshoot, ultra detailed. No text, no logo, no watermark. 4:5 vertical.",
   "kategoriler": [
-    {"key":"kapi-kollari","ad":"Kapı Kolları","label":"Kapı Kolu","koleksiyonlar":["aynali-kapi-kollari","kapi-kollari","kapi-kolu"],
-     "urun_aciklama":"a single mirrored/lever door handle on its wide vertical rectangular backplate, standing upright",
-     "kapak_baslik":"Zarafeti|Kapınıza Taşıyın",
-     "lifestyle_prompt":"Mount the handle CORRECTLY on a premium modern interior dark walnut/oak wooden door at realistic handle height, technically correct spindle and lock position, no floating, no impossible mounting. Scene: luxury residential interior, warm architectural lighting, minimal Scandinavian/modern European design, elegant wall, designer furniture, stone and wood, soft background blur, natural daylight from side windows, expensive atmosphere. Camera eye level 35-50mm, shallow depth of field, ultra sharp handle, softly blurred background."},
-    {"key":"kulplar","ad":"Mobilya Kulpları","label":"Mobilya Kulpu","koleksiyonlar":["genel-kulplar","dugme-kulplar"],
-     "urun_aciklama":"a single furniture cabinet handle or knob (drawer/cabinet pull), front view",
-     "kapak_baslik":"Mobilyanıza|İmza Atın",
-     "lifestyle_prompt":"Install the handle perfectly FLUSH on a realistic cabinet door or drawer front, correct screw positions and orientation, no floating, no distorted perspective. Scene: luxury modern kitchen or bathroom vanity or wardrobe, natural wood veneer, matte lacquer cabinets, premium interior design, minimal Scandinavian furniture, soft blur, natural daylight. Camera 45 degree close-up 50mm, shallow depth of field, the handle is the hero."},
-    {"key":"kilitler","ad":"Kilitler & Güvenlik","label":"Kilit","koleksiyonlar":["kapi-kilitleri","daire-kilitleri","celik-kapi-kilitleri","gomme-kapi-kilitleri","asma-kilitler","emniyet-kilitleri"],
-     "urun_aciklama":"a single door lock / cylinder lock / padlock body, front view",
-     "kapak_baslik":"Güvenliğiniz|Emin Ellerde",
-     "lifestyle_prompt":"The lock must be correctly mortised into a wooden door, faceplate perfectly flush, correct latch direction, cylinder hole and spindle hole aligned perfectly, technically accurate, no floating parts, no impossible installation. Scene: luxury interior wooden door, elegant hallway, luxury residence, warm lighting, soft blur. Camera door-edge close-up 45 degree, professional hardware macro quality, natural daylight with studio fill."},
-    {"key":"dolap-ayaklari","ad":"Dolap Ayakları","label":"Mobilya Ayağı","koleksiyonlar":["dolap-ayaklari"],
-     "urun_aciklama":"a single furniture leg / adjustable foot with mounting plate, side view",
-     "kapak_baslik":"Sağlam|Zemin",
-     "lifestyle_prompt":"Mount the furniture leg correctly UNDERNEATH a luxury cabinet, TV unit, sideboard or coffee table, mounting plate and holes mechanically correct, correct height and angle, no impossible attachment, no floating. Scene: luxury living room, premium wooden flooring, designer furniture, modern interior, minimal decoration, soft blur, natural daylight. Camera low angle close-up, professional furniture photography, studio reflections."},
-    {"key":"menteseler","ad":"Menteşeler","label":"Menteşe","koleksiyonlar":["kapi-menteseleri"],
-     "urun_aciklama":"a single door hinge, front view",
-     "kapak_baslik":"Sağlam|Bağlantılar",
-     "lifestyle_prompt":"Install the hinge correctly on the edge of a premium wooden door or cabinet, screws flush, correct orientation, mechanically accurate, no floating. Scene: luxury modern interior, warm daylight, minimal decor, soft blur. Camera 45 degree close-up, professional hardware photography, shallow depth of field."},
-    {"key":"askiliklar","ad":"Askılıklar","label":"Askılık","koleksiyonlar":["askiliklar","banyo-askisi"],
-     "urun_aciklama":"a single wall-mounted coat hook / towel hook / bathroom hanger",
-     "kapak_baslik":"Düzenin|Şık Hali",
-     "lifestyle_prompt":"Mount the hook/hanger correctly on a premium wall, perfectly flush and level, no floating. Scene: elegant entryway or luxury bathroom, warm natural daylight, minimal designer decor, soft blur. Camera eye level close-up, professional interior photography, shallow depth of field."},
-    {"key":"kapi-cekmeler","ad":"Kapı Çekmeleri","label":"Kapı Çekme","koleksiyonlar":["kapi-cekmeler"],
-     "urun_aciklama":"a single door pull handle / gate pull bar, front view",
-     "kapak_baslik":"Modern|Dokunuşlar",
-     "lifestyle_prompt":"Mount the pull handle vertically on a premium wooden or glass entrance door, correct height, flush, no floating, technically correct. Scene: luxury modern entrance / interior, warm daylight, stone and wood, soft blur. Camera eye level 35-50mm, shallow depth of field, the pull is the hero."},
-    {"key":"cekmece-raylari","ad":"Çekmece Rayları","label":"Çekmece Rayı","koleksiyonlar":["cekmece-raylari"],
-     "urun_aciklama":"a single drawer slide / telescopic runner rail, side view",
-     "kapak_baslik":"Kusursuz|Kayma",
-     "lifestyle_prompt":"Install the drawer slide/runner correctly inside an open premium drawer, mechanically correct mounting, no floating. Scene: luxury kitchen or wardrobe with an open drawer, natural wood veneer, soft blur, natural daylight. Camera 45 degree close-up, professional furniture photography, shallow depth of field."}
+    {
+      "key": "kapi-kollari",
+      "ad": "Kapı Kolları",
+      "label": "Kapı Kolu",
+      "koleksiyonlar": [
+        "aynali-kapi-kollari",
+        "kapi-kollari",
+        "kapi-kolu"
+      ],
+      "urun_aciklama": "a single mirrored/lever door handle on its wide vertical rectangular backplate, standing upright",
+      "kapak_baslik": "Zarafeti|Kapınıza Taşıyın",
+      "lifestyle_prompt": "Mount the handle CORRECTLY on a premium modern interior dark walnut/oak wooden door at realistic handle height, technically correct spindle and lock position, no floating, no impossible mounting. Scene: luxury residential interior, warm architectural lighting, minimal Scandinavian/modern European design, elegant wall, designer furniture, stone and wood, soft background blur, natural daylight from side windows, expensive atmosphere. Camera eye level 35-50mm, shallow depth of field, ultra sharp handle, softly blurred background.",
+      "tip": "door handle on a long rectangular backplate",
+      "durus": "dik"
+    },
+    {
+      "key": "kulplar",
+      "ad": "Mobilya Kulpları",
+      "label": "Mobilya Kulpu",
+      "koleksiyonlar": [
+        "genel-kulplar",
+        "dugme-kulplar"
+      ],
+      "urun_aciklama": "a single furniture cabinet handle or knob (drawer/cabinet pull), front view",
+      "kapak_baslik": "Mobilyanıza|İmza Atın",
+      "lifestyle_prompt": "Install the handle perfectly FLUSH on a realistic cabinet door or drawer front, correct screw positions and orientation, no floating, no distorted perspective. Scene: luxury modern kitchen or bathroom vanity or wardrobe, natural wood veneer, matte lacquer cabinets, premium interior design, minimal Scandinavian furniture, soft blur, natural daylight. Camera 45 degree close-up 50mm, shallow depth of field, the handle is the hero.",
+      "tip": "furniture cabinet drawer bar pull",
+      "durus": "slas"
+    },
+    {
+      "key": "kilitler",
+      "ad": "Kilitler & Güvenlik",
+      "label": "Kilit",
+      "koleksiyonlar": [
+        "kapi-kilitleri",
+        "daire-kilitleri",
+        "celik-kapi-kilitleri",
+        "gomme-kapi-kilitleri",
+        "asma-kilitler",
+        "emniyet-kilitleri"
+      ],
+      "urun_aciklama": "a single door lock / cylinder lock / padlock body, front view",
+      "kapak_baslik": "Güvenliğiniz|Emin Ellerde",
+      "lifestyle_prompt": "The lock must be correctly mortised into a wooden door, faceplate perfectly flush, correct latch direction, cylinder hole and spindle hole aligned perfectly, technically accurate, no floating parts, no impossible installation. Scene: luxury interior wooden door, elegant hallway, luxury residence, warm lighting, soft blur. Camera door-edge close-up 45 degree, professional hardware macro quality, natural daylight with studio fill.",
+      "tip": "door lock / cylinder lock body",
+      "durus": "dik"
+    },
+    {
+      "key": "dolap-ayaklari",
+      "ad": "Dolap Ayakları",
+      "label": "Mobilya Ayağı",
+      "koleksiyonlar": [
+        "dolap-ayaklari"
+      ],
+      "urun_aciklama": "a single furniture leg / adjustable foot with mounting plate, side view",
+      "kapak_baslik": "Sağlam|Zemin",
+      "lifestyle_prompt": "Mount the furniture leg correctly UNDERNEATH a luxury cabinet, TV unit, sideboard or coffee table, mounting plate and holes mechanically correct, correct height and angle, no impossible attachment, no floating. Scene: luxury living room, premium wooden flooring, designer furniture, modern interior, minimal decoration, soft blur, natural daylight. Camera low angle close-up, professional furniture photography, studio reflections.",
+      "tip": "furniture leg / adjustable foot with mounting plate",
+      "durus": "dik"
+    },
+    {
+      "key": "menteseler",
+      "ad": "Menteşeler",
+      "label": "Menteşe",
+      "koleksiyonlar": [
+        "kapi-menteseleri"
+      ],
+      "urun_aciklama": "a single door hinge, front view",
+      "kapak_baslik": "Sağlam|Bağlantılar",
+      "lifestyle_prompt": "Install the hinge correctly on the edge of a premium wooden door or cabinet, screws flush, correct orientation, mechanically accurate, no floating. Scene: luxury modern interior, warm daylight, minimal decor, soft blur. Camera 45 degree close-up, professional hardware photography, shallow depth of field.",
+      "tip": "door hinge",
+      "durus": "dik"
+    },
+    {
+      "key": "askiliklar",
+      "ad": "Askılıklar",
+      "label": "Askılık",
+      "koleksiyonlar": [
+        "askiliklar",
+        "banyo-askisi"
+      ],
+      "urun_aciklama": "a single wall-mounted coat hook / towel hook / bathroom hanger",
+      "kapak_baslik": "Düzenin|Şık Hali",
+      "lifestyle_prompt": "Mount the hook/hanger correctly on a premium wall, perfectly flush and level, no floating. Scene: elegant entryway or luxury bathroom, warm natural daylight, minimal designer decor, soft blur. Camera eye level close-up, professional interior photography, shallow depth of field.",
+      "tip": "wall-mounted coat/towel hook",
+      "durus": "dik"
+    },
+    {
+      "key": "kapi-cekmeler",
+      "ad": "Kapı Çekmeleri",
+      "label": "Kapı Çekme",
+      "koleksiyonlar": [
+        "kapi-cekmeler"
+      ],
+      "urun_aciklama": "a single door pull handle / gate pull bar, front view",
+      "kapak_baslik": "Modern|Dokunuşlar",
+      "lifestyle_prompt": "Mount the pull handle vertically on a premium wooden or glass entrance door, correct height, flush, no floating, technically correct. Scene: luxury modern entrance / interior, warm daylight, stone and wood, soft blur. Camera eye level 35-50mm, shallow depth of field, the pull is the hero.",
+      "tip": "door pull handle / gate pull bar",
+      "durus": "dik"
+    },
+    {
+      "key": "cekmece-raylari",
+      "ad": "Çekmece Rayları",
+      "label": "Çekmece Rayı",
+      "koleksiyonlar": [
+        "cekmece-raylari"
+      ],
+      "urun_aciklama": "a single drawer slide / telescopic runner rail, side view",
+      "kapak_baslik": "Kusursuz|Kayma",
+      "lifestyle_prompt": "Install the drawer slide/runner correctly inside an open premium drawer, mechanically correct mounting, no floating. Scene: luxury kitchen or wardrobe with an open drawer, natural wood veneer, soft blur, natural daylight. Camera 45 degree close-up, professional furniture photography, shallow depth of field.",
+      "tip": "drawer slide / telescopic runner rail",
+      "durus": "slas"
+    }
   ],
-  "tempo": {"gunluk_tekil_post": 2, "carousel_gunu": "Pazartesi", "lifestyle_gunu": "Çarşamba", "marka_gunu": "Cuma"}
+  "tempo": {
+    "gunluk_tekil_post": 2,
+    "carousel_gunu": "Pazartesi",
+    "lifestyle_gunu": "Çarşamba",
+    "marka_gunu": "Cuma"
+  }
 }
