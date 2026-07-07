@@ -1,15 +1,25 @@
 {
-  "tip": "lifestyle",
-  "klasor": "life-2026-07-07",
+  "tip": "tekil",
+  "kategori": "Kapı Kolu",
+  "klasor": "gun-2026-07-08",
   "products": [
     {
-      "slug": "anka-anka-aynali-kapi-kolu-mat-siyah-wc",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-10.webp?v=1759498244",
-      "ad": "Anka Aynalı Kapı Kolu Mat Siyah WC",
+      "slug": "palyo-nikel-inox-aynali-yale",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/140-palyo-nikel-saten-aynali-1768688558.jpg?v=1769077212",
+      "ad": "Palyo Nikel Aynalı Yale Kapı Kolu",
+      "finish": "Nikel İnox",
+      "price": "2607.99",
+      "compareAtPrice": null,
+      "kategori": "Kapı Kolu · YALE"
+    },
+    {
+      "slug": "alize-matsiyah-aynali-oda",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/alize-1-1768693240.png?v=1768948835",
+      "ad": "Alize Mat Siyah Aynalı Oda Kapı Kolu",
       "finish": "Mat Siyah",
-      "kategori": "Kapı Kolu",
-      "baslik": "Detaylarda|Zarafet",
-      "lifestyle_prompt": "Mount this EXACT door handle correctly on a premium interior wooden door at realistic handle height, technically correct spindle and lock position, flush and grounded, never floating. Scene: luxury warm minimalist residential hallway, dark walnut door, soft natural daylight from a side window, designer console table with a vase, stone and wood textures, calm expensive mood. CRITICAL FORM FIDELITY — the uploaded product image is the ONLY source of truth: reproduce the handle EXACTLY — the precise lever shape, curve, angle and thickness; the exact rectangular backplate size and proportions; the exact screw-hole positions; the keyhole/WC slot; the exact matte finish and color (matte black stays PURE MATTE BLACK, never blue/navy). Do NOT redesign, simplify, restyle, stretch or change ANY part of the handle; the mounted handle must be 100% identical in form to the reference. Install it correctly and technically as the sharp hero. Keep the upper third calmer for a headline. Photorealistic professional interior photoshoot, ultra sharp product, softly blurred background. No text/logo/watermark. 4:5 vertical."
+      "price": "2074.99",
+      "compareAtPrice": null,
+      "kategori": "Kapı Kolu · ODA"
     }
   ]
 }
