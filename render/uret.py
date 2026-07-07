@@ -70,8 +70,9 @@ def main():
     KAL = "AKZERN Ic Sayfa KALITE.html"
 
     if tip == "carousel":
-        # ★ KİLİTLİ COVER: fal NB Pro kilitli boş cluster şablonuna 5 ürünü CLUSTER_P promptuyla oturtur
-        nbpro.cluster([p["gercek_url"] for p in prods], f"{A}/kapak-hero.png", "kapak-kollar.png"); cover_crop(f"{A}/kapak-hero.png")
+        # ★ KİLİTLİ COVER: fal NB Pro kilitli boş cluster şablonuna 5 ürünü CLUSTER_P (tip+duruş) ile oturtur
+        t0 = prods[0].get("tip", "door handle"); d0 = prods[0].get("durus", "dik")
+        nbpro.cluster([p["gercek_url"] for p in prods], f"{A}/kapak-hero.png", "kapak-kollar.png", t0, d0); cover_crop(f"{A}/kapak-hero.png")
         shot("AKZERN Kapak - Kapi Kollari.html",
              {"hero": "assets/kapak-hero.png", "baslik": job.get("kapak_baslik", "Zarafeti|Kapınıza Taşıyın"),
               "kk": "AKZERN YAPI · "+job.get("kategori", "")}, f"{out}/01.png")
@@ -86,7 +87,8 @@ def main():
                  {"bg": f"assets/hero-{p['slug']}.png", "kicker": p.get("kategori", ""), "baslik": p.get("baslik", "Detaylarda|Zarafet"),
                   "kategori": p.get("kategori", ""), "ad": p["ad"], "alt": p.get("finish", ""), "tag": "Yeni"}, f"{out}/{p['slug']}.png")
     elif tip == "marka":
-        nbpro.cluster([p["gercek_url"] for p in prods], f"{A}/kapak-hero.png", "marka.png"); cover_crop(f"{A}/kapak-hero.png")
+        t0 = prods[0].get("tip", "door handle"); d0 = prods[0].get("durus", "dik")
+        nbpro.cluster([p["gercek_url"] for p in prods], f"{A}/kapak-hero.png", "marka.png", t0, d0); cover_crop(f"{A}/kapak-hero.png")
         shot("AKZERN Marka DINAMIK.html", {"bg": "assets/kapak-hero.png", "baslik": job.get("baslik", "Yapının|Sağlam İsmi"),
               "slogan": job.get("slogan", "Zarafet · Güven · Kalite"), "kicker": "AKZERN YAPI"}, f"{out}/marka.png")
     else:  # tekil

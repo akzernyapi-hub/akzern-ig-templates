@@ -63,8 +63,15 @@ def single(product_url, out, template="ic.png", tip="door handle", durus="dik"):
     prompt = SINGLE_TMPL.format(tip=tip, durus=d)
     _call([_uri(f"{SB}/{template}"), product_url], prompt, out)
 
-def cluster(product_urls, out, template="kapak-kollar.png"):
-    _call([_uri(f"{SB}/{template}")] + list(product_urls), CLUSTER_P, out)
+def cluster(product_urls, out, template="kapak-kollar.png", tip="door handle", durus="dik"):
+    # kulp gibi ürünler için tip + duruş prompta işlenir
+    poz = ("standing perfectly UPRIGHT and VERTICAL on the flat TOP SURFACE of each podium, base firmly grounded, never floating"
+           if durus == "dik" else
+           "resting elegantly on each podium, oriented DIAGONALLY like a forward slash '/', tilted to the right and slightly raised, as a premium display")
+    p = CLUSTER_P.replace("door handles", tip + "s").replace("door handle", tip).replace(
+        "standing perfectly UPRIGHT and VERTICAL on the flat TOP SURFACE of each podium, its bottom base firmly PLANTED and GROUNDED resting on the podium top "
+        "with a soft contact shadow — never floating, never hovering above.", poz + ". ")
+    _call([_uri(f"{SB}/{template}")] + list(product_urls), p, out)
 
 def lifestyle(product_url, scene_prompt, out):
     _call([product_url], scene_prompt, out)
