@@ -15,3 +15,14 @@ Each handle must be 100% IDENTICAL to its reference product image — exact rect
 
 ## 3) BİRLEŞİK (cover üretimi için) = OTURTMA + ÜRÜN
 İlk görsel = KİLİTLİ boş cluster şablonu (assets/sablon/kapak-kollar.png). Sonraki görseller = gerçek ürünler (sırayla). Model: imagen-nano-banana-2 (Magnific) veya fal nano-banana-pro. aspectRatio 4:5. Üst bölge başlık için boş kalsın.
+
+---
+## ★ KİLİTLİ KAZANAN YÖNTEM (2026-07-07 kullanıcı onayladı — DEĞİŞTİRME)
+Cover = `nbpro.cluster(product_urls, out, "kapak-kollar.png")` → fal NB Pro edit: image_urls=[KİLİTLİ boş cluster şablonu, ürün1..5] + `nbpro.CLUSTER_P`.
+Sonuç: 5 farklı ürün podyumlara İRİ + grounded + ayrı ayrı oturur (şablon bozulmaz). uret.py carousel/marka bunu kullanır.
+
+### Tek kolu düzeltme (swap) — biri yanlış/çift çıkarsa
+image_urls=[üretilen_cover, doğru_ürün_referansı] + prompt:
+```
+The FIRST image is a finished scene with door handles on podiums. Replace ONLY the [KONUM, ör: FAR LEFT / leftmost] handle with the handle in the SECOND image, on the SAME podium, same large size, upright and grounded, 100% identical in form to the second image. Keep EVERYTHING ELSE 100% IDENTICAL — other handles, podiums, positions, lighting, shadows, background unchanged. Photorealistic, seamless.
+```

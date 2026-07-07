@@ -40,12 +40,17 @@ SINGLE_P = ("Take the empty cream podium scene from the FIRST image and keep it 
   "CRITICAL COLOR RULE: preserve the exact original finish and color from the source photo — if it is matte black it must stay PURE MATTE BLACK (never blue, navy, grey or teal); if nickel/satin keep that exact metal tone. Do NOT shift or recolor the finish. "
   "Do NOT redesign, do NOT make a pair. Photorealistic, keep the upper area empty for a headline.")
 
-CLUSTER_P = ("Take the empty cream/terracotta clustered podium scene from the FIRST image and keep it 100% identical. "
-  "Place the following door handles onto the podiums: EXACTLY ONE single handle standing UPRIGHT and VERTICAL on EACH podium like a luxury showroom, "
-  "each handle BIG and DETAILED filling most of its podium height, firmly grounded standing on the podium top with a soft contact shadow. "
-  "STRICT: NO pairs (one handle per podium), NO lying or horizontal handles (all vertical, standing). "
-  "COLOR RULE: preserve each handle's EXACT finish — matte black stays PURE MATTE BLACK (never blue/navy/teal), nickel stays nickel. "
-  "Each handle 100% IDENTICAL to its reference image (exact lever, backplate, screws, slot, finish); do NOT redesign or merge. Photorealistic, keep the upper area empty for a headline.")
+# ★ KİLİTLİ KAZANAN COVER PROMPTU (2026-07-07 kullanıcı onayı) — DEĞİŞTİRME
+# fal NB Pro edit: image_urls=[KİLİTLİ boş cluster şablonu, ürün1..5] + bu prompt.
+CLUSTER_P = ("The FIRST image is a fixed studio scene with empty cream and terracotta cylindrical podiums — keep it 100% UNCHANGED "
+  "(same podiums, same positions, same background). Place the door handles from the other images onto the podiums, ONE distinct handle per podium "
+  "(every handle is a DIFFERENT product — do NOT duplicate or repeat any handle, do NOT put the same handle twice). "
+  "Each handle stands perfectly UPRIGHT and VERTICAL on the flat TOP SURFACE of its podium, its bottom base firmly PLANTED and GROUNDED resting on the podium top "
+  "with a soft contact shadow — never floating, never hovering above. Make each handle VERY LARGE, THICK and SUBSTANTIAL — bold, prominent, tall, occupying most of its "
+  "podium's height and clearly the hero (NOT thin, NOT small, NOT weak). Arrange them richly across the cluster but with enough separation that none is cut off by the border. "
+  "Each handle 100% IDENTICAL in form to its reference image — exact rectangular backplate, lever shape, screw holes, keyhole/WC slot and finish; "
+  "matte black stays PURE MATTE BLACK (never blue/navy); nickel/satin stays that exact metal tone; do NOT redesign, distort, merge or make pairs. "
+  "Photorealistic premium studio product photography. Keep the upper third of the image emptier for a headline.")
 
 def single(product_url, out, template="ic.png"):
     _call([_uri(f"{SB}/{template}"), product_url], SINGLE_P, out)
