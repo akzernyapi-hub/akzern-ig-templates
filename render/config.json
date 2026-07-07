@@ -18,18 +18,30 @@
       "durus": "dik"
     },
     {
-      "key": "kulplar",
-      "ad": "Mobilya Kulpları",
+      "key": "kulplar-uzun",
+      "ad": "Uzun Kulplar",
       "label": "Mobilya Kulpu",
       "koleksiyonlar": [
-        "genel-kulplar",
-        "dugme-kulplar"
+        "genel-kulplar"
       ],
-      "urun_aciklama": "a single furniture cabinet handle or knob (drawer/cabinet pull), front view",
+      "urun_aciklama": "a furniture cabinet drawer bar pull (elongated)",
       "kapak_baslik": "Mobilyanıza|İmza Atın",
       "lifestyle_prompt": "Install the handle perfectly FLUSH on a realistic cabinet door or drawer front, correct screw positions and orientation, no floating, no distorted perspective. Scene: luxury modern kitchen or bathroom vanity or wardrobe, natural wood veneer, matte lacquer cabinets, premium interior design, minimal Scandinavian furniture, soft blur, natural daylight. Camera 45 degree close-up 50mm, shallow depth of field, the handle is the hero.",
       "tip": "furniture cabinet drawer bar pull",
       "durus": "slas"
+    },
+    {
+      "key": "kulplar-dugme",
+      "ad": "Düğme Kulplar",
+      "label": "Düğme Kulp",
+      "koleksiyonlar": [
+        "dugme-kulplar"
+      ],
+      "urun_aciklama": "a furniture cabinet knob (round/small)",
+      "kapak_baslik": "Küçük Dokunuş|Büyük Fark",
+      "lifestyle_prompt": "Install the handle perfectly FLUSH on a realistic cabinet door or drawer front, correct screw positions and orientation, no floating, no distorted perspective. Scene: luxury modern kitchen or bathroom vanity or wardrobe, natural wood veneer, matte lacquer cabinets, premium interior design, minimal Scandinavian furniture, soft blur, natural daylight. Camera 45 degree close-up 50mm, shallow depth of field, the handle is the hero.",
+      "tip": "furniture cabinet knob",
+      "durus": "dik"
     },
     {
       "key": "kilitler",
