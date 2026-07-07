@@ -15,22 +15,34 @@ jobs:
         run: |
           if [ -z "$IG_TOKEN" ] || [ -z "$IG_USER_ID" ]; then echo "IG_TOKEN/IG_USER_ID yok"; exit 0; fi
           python3 - <<'PY'
-          import json, os, urllib.request, urllib.parse, time
+          import json, os, urllib.request, urllib.parse, time, sys
           job=json.load(open('render/publish-job.json'))
-          T=os.environ['IG_TOKEN']; U=os.environ['IG_USER_ID']; BASE=f"https://graph.instagram.com/v21.0/{U}"
+          T=os.environ['IG_TOKEN']; U=os.environ['IG_USER_ID']
+          BASE=f"https://graph.instagram.com/v21.0/{U}"
           def post(path, data):
               data['access_token']=T
-              req=urllib.request.Request(BASE+path, data=urllib.parse.urlencode(data).encode())
-              return json.load(urllib.request.urlopen(req))
+              body=urllib.parse.urlencode(data).encode()
+              req=urllib.request.Request(BASE+path, data=body)
+              try:
+                  return json.load(urllib.request.urlopen(req))
+              except urllib.error.HTTPError as e:
+                  err_body=e.read().decode('utf-8','replace')
+                  print(f"HTTP {e.code} {path}: {err_body}", file=sys.stderr)
+                  raise
           imgs=job['image_urls']; cap=job.get('caption','')
+          print(f"Gorsel sayisi: {len(imgs)}")
           if len(imgs)==1:
               c=post("/media", {"image_url":imgs[0],"caption":cap}); time.sleep(5)
               r=post("/media_publish", {"creation_id":c['id']})
           else:
               kids=[]
-              for u in imgs:
-                  c=post("/media", {"image_url":u,"is_carousel_item":"true"}); kids.append(c['id']); time.sleep(3)
-              car=post("/media", {"media_type":"CAROUSEL","children":",".join(kids),"caption":cap}); time.sleep(5)
+              for i,u in enumerate(imgs):
+                  print(f"Carousel item {i+1}/{len(imgs)}: {u}")
+                  c=post("/media", {"image_url":u,"is_carousel_item":"true","media_type":"IMAGE"})
+                  kids.append(c['id']); time.sleep(3)
+              print(f"Carousel container olusturuluyor, kids={kids}")
+              car=post("/media", {"media_type":"CAROUSEL","children":",".join(kids),"caption":cap})
+              time.sleep(5)
               r=post("/media_publish", {"creation_id":car['id']})
           print("YAYINLANDI:", r)
           PY
