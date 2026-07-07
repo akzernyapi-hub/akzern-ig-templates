@@ -1,0 +1,12 @@
+{
+  "kural": "The uploaded product image is the ONLY source of truth: never redesign it, never change its form, proportions, finish, color or geometry; do not add or remove details. Place the EXACT product, correctly and technically installed, as the clear hero. Keep the upper third calmer/lighter for a headline. Photorealistic, indistinguishable from a professional commercial interior photoshoot, ultra sharp product with softly blurred background. No text, no logo, no watermark. 4:5 vertical.",
+  "kapi-kollari": {
+    "montaj": "Mount this EXACT door handle correctly on a premium interior wooden door at realistic handle height, technically correct spindle and lock position, flush and grounded, never floating.",
+    "ortamlar": [
+      "Scene: luxury warm minimalist residential hallway, dark walnut door, soft natural daylight from a side window, designer console table with a vase, stone and wood textures, calm expensive mood.",
+      "Scene: bright Scandinavian living space, light oak door, large window with sheer curtains, greenery, warm morning light, minimal designer furniture, airy premium mood.",
+      "Scene: modern luxury bedroom entrance, matte grey-green door, warm accent lighting, textured plaster wall, boucle armchair, cozy high-end atmosphere.",
+      "Scene: contemporary office/study door, smoked oak, floor lamp glow, bookshelf softly blurred, sophisticated dark academia mood."
+    ]
+  }
+}
