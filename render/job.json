@@ -1,25 +1,25 @@
 {
   "tip": "tekil",
   "kategori": "Kapı Kolu",
-  "klasor": "gun-2026-07-08",
+  "klasor": "gun-2026-07-10",
   "products": [
     {
-      "slug": "palyo-nikel-inox-aynali-yale",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/140-palyo-nikel-saten-aynali-1768688558.jpg?v=1769077212",
-      "ad": "Palyo Nikel Aynalı Yale Kapı Kolu",
-      "finish": "Nikel İnox",
-      "price": "2607.99",
+      "slug": "alize-matsiyah-aynali-wc-sag",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/alize-1-1768693318.png?v=1768946198",
+      "ad": "Alize Mat Siyah Aynalı WC Sağ",
+      "finish": "Mat Siyah",
+      "price": "2159.99",
       "compareAtPrice": null,
-      "kategori": "Kapı Kolu · YALE"
+      "kategori": "Kapı Kolu · WC"
     },
     {
-      "slug": "alize-matsiyah-aynali-oda",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/alize-1-1768693240.png?v=1768948835",
-      "ad": "Alize Mat Siyah Aynalı Oda Kapı Kolu",
-      "finish": "Mat Siyah",
-      "price": "2074.99",
+      "slug": "noyan-anka-mat-antrasit-aynali-yale",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/NOYAN-YL1-scaled.jpg?v=1759498286",
+      "ad": "Noyan/Anka Mat Antrasit Aynalı Kapı Kolu Yale",
+      "finish": "Mat Antrasit",
+      "price": "657.99",
       "compareAtPrice": null,
-      "kategori": "Kapı Kolu · ODA"
+      "kategori": "Kapı Kolu · YALE"
     }
   ]
 }
