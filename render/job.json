@@ -1,65 +1,25 @@
 {
-  "tip": "carousel",
-  "kategori": "Uzun Kulplar",
-  "klasor": "carousel-kulplar-uzun-2026-07-13",
-  "kapak_baslik": "Mobilyanıza|İmza Atın",
-  "kapak_sablon": "kapak-kulp.png",
-  "kapak_tpl": "AKZERN Kapak - Mobilya Kulplari.html",
+  "tip": "tekil",
+  "kategori": "Kapı Kolu",
+  "klasor": "gun-2026-07-14",
   "products": [
     {
-      "slug": "kalin-yay-kulp-beyaz-96mm",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/kalin-yay-beyaz-1768777097.png?v=1769213532",
-      "ad": "Kalın Yay Kulp Beyaz",
-      "finish": "Beyaz",
-      "price": "72.99",
+      "slug": "lotus-aynali-nikel-saten-wc-sag",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-311.jpg?v=1759497677",
+      "ad": "Lotus Aynalı Nikel Saten Kapı Kolu (WC SAĞ)",
+      "finish": "Nikel Saten",
+      "price": "961.99",
       "compareAtPrice": null,
-      "kategori": "Mobilya Kulpu · 96MM",
-      "tip": "furniture cabinet drawer bar pull",
-      "durus": "slas"
+      "kategori": "Kapı Kolu · WC"
     },
     {
-      "slug": "arsin-duz-mat-siyah-128mm",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/k1015-128-04-1-1772664355.jpg?v=1772664443",
-      "ad": "Arsin Düz Mat Siyah",
+      "slug": "lotus-aynali-mat-siyah-wc-sol",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-303.jpg?v=1759497677",
+      "ad": "Lotus Aynalı Mat Siyah Kapı Kolu (WC SOL)",
       "finish": "Mat Siyah",
-      "price": "273.99",
+      "price": "961.99",
       "compareAtPrice": null,
-      "kategori": "Mobilya Kulpu · 128MM",
-      "tip": "furniture cabinet drawer bar pull",
-      "durus": "slas"
-    },
-    {
-      "slug": "arsin-cizgili-bronz-128mm",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/k1017-128-03-1-1772580851.jpg?v=1772581014",
-      "ad": "Arsin Çizgili Bronz",
-      "finish": "Bronz",
-      "price": "339.99",
-      "compareAtPrice": null,
-      "kategori": "Mobilya Kulpu · 128MM",
-      "tip": "furniture cabinet drawer bar pull",
-      "durus": "slas"
-    },
-    {
-      "slug": "burgu-altin-96mm",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/brg-96-20-1-1772568202.jpg?v=1772568381",
-      "ad": "Burgu Altın",
-      "finish": "Altın",
-      "price": "190.99",
-      "compareAtPrice": null,
-      "kategori": "Mobilya Kulpu · 96MM",
-      "tip": "furniture cabinet drawer bar pull",
-      "durus": "slas"
-    },
-    {
-      "slug": "mercan-kulp-mat-altin-96-128mm",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/3470-m-ma96-1768854046.jpg?v=1769210642",
-      "ad": "Mercan Kulp Mat Altın",
-      "finish": "Mat Altın",
-      "price": "169.99",
-      "compareAtPrice": null,
-      "kategori": "Mobilya Kulpu · 96/128MM",
-      "tip": "furniture cabinet drawer bar pull",
-      "durus": "slas"
+      "kategori": "Kapı Kolu · WC"
     }
   ]
 }
