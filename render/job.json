@@ -1,19 +1,19 @@
 {
   "tip": "carousel",
   "kategori": "Düğme Kulplar",
-  "klasor": "carousel-kulplar-dugme-v2",
+  "klasor": "carousel-kulplar-dugme-v3",
   "kapak_baslik": "Küçük Dokunuş|Büyük Fark",
   "kapak_sablon": "kapak-kulp.png",
   "kapak_tpl": "AKZERN Kapak - Mobilya Kulplari.html",
   "products": [
     {
-      "slug": "elips-dugme",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-389.jpg?v=1759497682",
-      "ad": "Elips Düğme Kulp",
-      "finish": "Siyah · Bakır",
-      "price": "181.99",
+      "slug": "yigit-inox-dugme",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/render_bf83a3c9-5c3f-4c48-b0ee-938b8887502d.png?v=1782407450",
+      "ad": "Yiğit Düğme İnox",
+      "finish": "İnox",
+      "price": "110.00",
       "compareAtPrice": null,
-      "kategori": "Düğme Kulp · Elips",
+      "kategori": "Düğme Kulp · İnox",
       "tip": "furniture cabinet knob",
       "durus": "dik"
     },
@@ -29,13 +29,13 @@
       "durus": "dik"
     },
     {
-      "slug": "safran-rose-dugme",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/a661f881-image_1950-395.jpg?v=1759248249",
-      "ad": "Safran Rose Düğme",
-      "finish": "Beyaz · Rose",
-      "price": "231.99",
+      "slug": "avci-mat-altin-dugme",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/2728-1-1776943571.jpg?v=1776943661",
+      "ad": "Avcı Mat Altın Düğme",
+      "finish": "Mat Altın",
+      "price": "161.99",
       "compareAtPrice": null,
-      "kategori": "Düğme Kulp · 16MM",
+      "kategori": "Düğme Kulp · Oval",
       "tip": "furniture cabinet knob",
       "durus": "dik"
     },
