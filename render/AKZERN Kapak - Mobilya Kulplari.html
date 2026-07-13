@@ -32,17 +32,24 @@
 </head>
 <body>
   <div class="post">
-    <img class="hero" src="assets/kapak-kulp-hero.png" alt="mobilya kulpları">
+    <img class="hero" id="hero" src="assets/kapak-hero.png" alt="mobilya kulpları">
     <div class="veil"></div>
-    <div class="swipe">1 / 6 ›</div>
+    <div class="swipe" id="sira">1 / 6 ›</div>
     <div class="head">
-      <div class="kk">AKZERN YAPI · Mobilya Kulpları</div>
-      <h2>Mobilyanıza<br>İmza Atın</h2>
+      <div class="kk" id="kk">AKZERN YAPI · Mobilya Kulpları</div>
+      <h2 id="baslik">Mobilyanıza<br>İmza Atın</h2>
       <div class="cta">Hemen Keşfet <span class="ar">›</span></div>
     </div>
-    <div class="rosette"><span class="l1">Yeni</span><span class="l2">SEZON</span></div>
+    <div class="rosette"><span class="l1" id="rl1">Yeni</span><span class="l2" id="rl2">SEZON</span></div>
     <img class="logo" src="assets/akzern-logo.png" alt="AKZERN YAPI">
-    <div class="fine"><b>Bar · Cup · Düğme</b><br>Krom · Siyah · Altın</div>
+    <div class="fine" id="fine"><b>Bar · Cup · Düğme</b><br>Krom · Siyah · Altın</div>
   </div>
+<script>
+  const p=new URLSearchParams(location.search),S=(i,v)=>{if(v!=null){const e=document.getElementById(i);if(e)e.textContent=v}};
+  if(p.get('hero'))document.getElementById('hero').src=p.get('hero');
+  if(p.get('baslik'))document.getElementById('baslik').innerHTML=p.get('baslik').replace(/\|/g,'<br>');
+  if(p.get('fine'))document.getElementById('fine').innerHTML=p.get('fine').replace(/\|/g,'<br>');
+  S('kk',p.get('kk'));S('sira',p.get('sira'));S('rl1',p.get('rl1'));S('rl2',p.get('rl2'));
+</script>
 </body>
 </html>

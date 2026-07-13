@@ -72,8 +72,10 @@ def main():
     if tip == "carousel":
         # ★ KİLİTLİ COVER: fal NB Pro kilitli boş cluster şablonuna 5 ürünü CLUSTER_P (tip+duruş) ile oturtur
         t0 = prods[0].get("tip", "door handle"); d0 = prods[0].get("durus", "dik")
-        nbpro.cluster([p["gercek_url"] for p in prods], f"{A}/kapak-hero.png", "kapak-kollar.png", t0, d0); cover_crop(f"{A}/kapak-hero.png")
-        shot("AKZERN Kapak - Kapi Kollari.html",
+        sb = job.get("kapak_sablon", "kapak-kollar.png")
+        kk_tpl = job.get("kapak_tpl", "AKZERN Kapak - Kapi Kollari.html")
+        nbpro.cluster([p["gercek_url"] for p in prods], f"{A}/kapak-hero.png", sb, t0, d0); cover_crop(f"{A}/kapak-hero.png")
+        shot(kk_tpl,
              {"hero": "assets/kapak-hero.png", "baslik": job.get("kapak_baslik", "Zarafeti|Kapınıza Taşıyın"),
               "kk": "AKZERN YAPI · "+job.get("kategori", "")}, f"{out}/01.png")
         for i, p in enumerate(prods, start=2):
