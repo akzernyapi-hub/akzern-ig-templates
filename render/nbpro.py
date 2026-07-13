@@ -34,6 +34,7 @@ def _fetch_uri(src):
 def _call(image_urls, prompt, out, ar="4:5"):
     import time
     body = json.dumps({"prompt": prompt, "image_urls": image_urls, "aspect_ratio": ar, "num_images": 1}).encode()
+    print(f"fal.run call: {len(image_urls)} images, payload {len(body)//1024}KB", flush=True)
     last = None
     for attempt in range(4):
         try:
@@ -47,6 +48,13 @@ def _call(image_urls, prompt, out, ar="4:5"):
                 except Exception as e:
                     last = e; time.sleep(3)
             raise last
+        except urllib.error.HTTPError as e:
+            body_err = ""
+            try: body_err = e.read().decode("utf-8", errors="replace")[:800]
+            except: pass
+            last = Exception(f"HTTP {e.code} from fal.run (attempt {attempt+1}): {body_err}")
+            print(f"fal.run error: {last}", flush=True)
+            time.sleep(5 * (attempt + 1))
         except Exception as e:
             last = e; time.sleep(5 * (attempt + 1))
     raise last
