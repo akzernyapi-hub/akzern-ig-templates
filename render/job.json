@@ -1,25 +1,63 @@
 {
-  "tip": "tekil",
-  "kategori": "Kapı Kolu",
-  "klasor": "gun-2026-07-13",
+  "tip": "carousel",
+  "kategori": "Uzun Kulplar",
+  "klasor": "carousel-kulplar-uzun-2026-07-13",
+  "kapak_baslik": "Mobilyanıza|İmza Atın",
   "products": [
     {
-      "slug": "alize-matsiyah-aynali-wc-sag",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/alize-1-1768693318.png?v=1768946198",
-      "ad": "Alize Mat Siyah Aynalı WC Sağ",
-      "finish": "Mat Siyah",
-      "price": "2159.99",
-      "compareAtPrice": null,
-      "kategori": "Kapı Kolu · WC"
+      "slug": "sofuoglu-asya-aluminyum-kulp-krom",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/9b901c5c-image_1950.jpg?v=1759248233",
+      "ad": "Asya Alüminyum Kulp Krom",
+      "finish": "Krom",
+      "price": "79.99",
+      "compareAtPrice": "99.99",
+      "kategori": "Mobilya Kulpu · 160mm",
+      "tip": "furniture cabinet drawer bar pull",
+      "durus": "slas"
     },
     {
-      "slug": "noyan-anka-mat-antrasit-aynali-yale",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/NOYAN-YL1-scaled.jpg?v=1759498286",
-      "ad": "Noyan/Anka Mat Antrasit Aynalı Kapı Kolu Yale",
-      "finish": "Mat Antrasit",
-      "price": "657.99",
+      "slug": "sofuoglu-yakut-kulp-mat-siyah",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/fa930d0d-image_1950-23.jpg?v=1759248232",
+      "ad": "Yakut Kulp Mat Siyah",
+      "finish": "Mat Siyah",
+      "price": "129.99",
+      "compareAtPrice": "189.99",
+      "kategori": "Mobilya Kulpu · 160mm",
+      "tip": "furniture cabinet drawer bar pull",
+      "durus": "slas"
+    },
+    {
+      "slug": "kanlica-kulp-altin-128mm",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/kl-285-kanlica-altin-1768768580.jpg?v=1769439136",
+      "ad": "Kanlıca Kulp Altın 128MM",
+      "finish": "Altın",
+      "price": "70.99",
       "compareAtPrice": null,
-      "kategori": "Kapı Kolu · YALE"
+      "kategori": "Mobilya Kulpu · 128mm",
+      "tip": "furniture cabinet drawer bar pull",
+      "durus": "slas"
+    },
+    {
+      "slug": "kalin-yay-kulp-beyaz-96mm",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/kalin-yay-beyaz-1768777097.png?v=1769213532",
+      "ad": "Kalın Yay Kulp Beyaz 96MM",
+      "finish": "Beyaz",
+      "price": "72.99",
+      "compareAtPrice": null,
+      "kategori": "Mobilya Kulpu · 96mm",
+      "tip": "furniture cabinet drawer bar pull",
+      "durus": "slas"
+    },
+    {
+      "slug": "perge-i̇nox-128mm",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/pg-128-24-1-1772570998.jpg?v=1772571223",
+      "ad": "Perge İnox 128MM",
+      "finish": "İnox",
+      "price": "223.99",
+      "compareAtPrice": null,
+      "kategori": "Mobilya Kulpu · 128mm",
+      "tip": "furniture cabinet drawer bar pull",
+      "durus": "slas"
     }
   ]
 }
