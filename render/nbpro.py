@@ -13,6 +13,24 @@ def _uri(path):
     b = io.BytesIO(); im.save(b, "JPEG", quality=92)
     return "data:image/jpeg;base64," + base64.b64encode(b.getvalue()).decode()
 
+def _fetch_uri(src):
+    """Local path or http(s) URL → base64 data URI (JPEG). Downloads remote images so fal.run never needs to fetch CDN URLs directly."""
+    if not src.startswith("http://") and not src.startswith("https://"):
+        return _uri(src)
+    import time, tempfile
+    last = None
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(src, headers={"User-Agent": "Mozilla/5.0 (compatible; AkzernBot/1.0)"})
+            data = urllib.request.urlopen(req, timeout=60).read()
+            ct = "image/png" if src.lower().split("?")[0].endswith(".png") else "image/jpeg"
+            im = Image.open(io.BytesIO(data)).convert("RGB")
+            b = io.BytesIO(); im.save(b, "JPEG", quality=92)
+            return "data:image/jpeg;base64," + base64.b64encode(b.getvalue()).decode()
+        except Exception as e:
+            last = e; time.sleep(3 * (attempt + 1))
+    raise last
+
 def _call(image_urls, prompt, out, ar="4:5"):
     import time
     body = json.dumps({"prompt": prompt, "image_urls": image_urls, "aspect_ratio": ar, "num_images": 1}).encode()
@@ -61,7 +79,7 @@ CLUSTER_P = ("The FIRST image is a fixed studio scene with empty cream and terra
 def single(product_url, out, template="ic.png", tip="door handle", durus="dik"):
     d = DURUS.get(durus, durus)  # anahtar ('dik'/'slas') ya da doğrudan metin
     prompt = SINGLE_TMPL.format(tip=tip, durus=d)
-    _call([_uri(f"{SB}/{template}"), product_url], prompt, out)
+    _call([_uri(f"{SB}/{template}"), _fetch_uri(product_url)], prompt, out)
 
 def cluster(product_urls, out, template="kapak-kollar.png", tip="door handle", durus="dik"):
     # kulp gibi ürünler için tip + duruş prompta işlenir
@@ -71,10 +89,10 @@ def cluster(product_urls, out, template="kapak-kollar.png", tip="door handle", d
     p = CLUSTER_P.replace("door handles", tip + "s").replace("door handle", tip).replace(
         "standing perfectly UPRIGHT and VERTICAL on the flat TOP SURFACE of each podium, its bottom base firmly PLANTED and GROUNDED resting on the podium top "
         "with a soft contact shadow — never floating, never hovering above.", poz + ". ")
-    _call([_uri(f"{SB}/{template}")] + list(product_urls), p, out)
+    _call([_uri(f"{SB}/{template}")] + [_fetch_uri(u) for u in product_urls], p, out)
 
 def lifestyle(product_url, scene_prompt, out):
-    _call([product_url], scene_prompt, out)
+    _call([_fetch_uri(product_url)], scene_prompt, out)
 
 PACKSHOT_P = ("Product photo: place the EXACT door handle from the image standing perfectly UPRIGHT and VERTICAL, centered on a plain pure white seamless studio background, large and sharp, soft shadow. ONE single handle only, no pair. "
   "Keep it 100% identical including EXACT finish — matte black stays PURE MATTE BLACK (never blue/navy), nickel stays nickel. Photorealistic e-commerce packshot.")
