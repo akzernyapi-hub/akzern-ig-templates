@@ -1,19 +1,19 @@
 {
   "tip": "carousel",
   "kategori": "Düğme Kulplar",
-  "klasor": "carousel-kulplar-dugme-2026-07-14",
+  "klasor": "carousel-kulplar-dugme-v2",
   "kapak_baslik": "Küçük Dokunuş|Büyük Fark",
   "kapak_sablon": "kapak-kulp.png",
   "kapak_tpl": "AKZERN Kapak - Mobilya Kulplari.html",
   "products": [
     {
-      "slug": "vigo-dugme-krom",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/ekran-resmi-2026-01-17-18-1768662256.png?v=1769100108",
-      "ad": "Vigo Düğme Krom",
-      "finish": "Krom",
-      "price": "209.99",
+      "slug": "elips-dugme",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-389.jpg?v=1759497682",
+      "ad": "Elips Düğme Kulp",
+      "finish": "Siyah · Bakır",
+      "price": "181.99",
       "compareAtPrice": null,
-      "kategori": "Düğme Kulp · Krom",
+      "kategori": "Düğme Kulp · Elips",
       "tip": "furniture cabinet knob",
       "durus": "dik"
     },
@@ -29,13 +29,13 @@
       "durus": "dik"
     },
     {
-      "slug": "uber-altin-dugme",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/d-ubr-20-20-1-1772571845.jpg?v=1772572838",
-      "ad": "Uber Altın Düğme",
-      "finish": "Altın",
-      "price": "182.99",
+      "slug": "safran-rose-dugme",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/a661f881-image_1950-395.jpg?v=1759248249",
+      "ad": "Safran Rose Düğme",
+      "finish": "Beyaz · Rose",
+      "price": "231.99",
       "compareAtPrice": null,
-      "kategori": "Düğme Kulp · 20MM",
+      "kategori": "Düğme Kulp · 16MM",
       "tip": "furniture cabinet knob",
       "durus": "dik"
     },
