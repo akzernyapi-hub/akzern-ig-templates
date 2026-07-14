@@ -1,65 +1,15 @@
 {
-  "tip": "carousel",
-  "kategori": "Düğme Kulplar",
-  "klasor": "carousel-kulplar-dugme-v3",
-  "kapak_baslik": "Küçük Dokunuş|Büyük Fark",
-  "kapak_sablon": "kapak-kulp.png",
-  "kapak_tpl": "AKZERN Kapak - Mobilya Kulplari.html",
+  "tip": "lifestyle",
+  "klasor": "life-kulplar-2026-07-14",
   "products": [
     {
-      "slug": "yigit-inox-dugme",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/render_bf83a3c9-5c3f-4c48-b0ee-938b8887502d.png?v=1782407450",
-      "ad": "Yiğit Düğme İnox",
-      "finish": "İnox",
-      "price": "110.00",
-      "compareAtPrice": null,
-      "kategori": "Düğme Kulp · İnox",
-      "tip": "furniture cabinet knob",
-      "durus": "dik"
-    },
-    {
-      "slug": "arsin-duz-mat-siyah-dugme",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/d1015-04-1-1772583380.jpg?v=1772583488",
-      "ad": "Arsin Düz Mat Siyah Düğme",
-      "finish": "Mat Siyah",
-      "price": "190.99",
-      "compareAtPrice": null,
-      "kategori": "Düğme Kulp · 20MM",
-      "tip": "furniture cabinet knob",
-      "durus": "dik"
-    },
-    {
-      "slug": "avci-mat-altin-dugme",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/2728-1-1776943571.jpg?v=1776943661",
-      "ad": "Avcı Mat Altın Düğme",
-      "finish": "Mat Altın",
-      "price": "161.99",
-      "compareAtPrice": null,
-      "kategori": "Düğme Kulp · Oval",
-      "tip": "furniture cabinet knob",
-      "durus": "dik"
-    },
-    {
-      "slug": "kure-kristal-dugme",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/72580c28-7c80-4146-ab00-09b512c76b07-1768774652.png?v=1769287569",
-      "ad": "Küre Kristal Düğme",
-      "finish": "Kristal",
-      "price": "65.99",
-      "compareAtPrice": null,
-      "kategori": "Düğme Kulp · 30MM",
-      "tip": "furniture cabinet knob",
-      "durus": "dik"
-    },
-    {
-      "slug": "festiva-bronz-dugme",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/kl-159-festiva-bronz-00-1768690068.jpg?v=1768924647",
-      "ad": "Festiva Bronz Düğme",
-      "finish": "Bronz",
-      "price": "178.99",
-      "compareAtPrice": null,
-      "kategori": "Düğme Kulp · Bronz",
-      "tip": "furniture cabinet knob",
-      "durus": "dik"
+      "slug": "sofuoglu-asya-aluminyum-kulp-krom",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/9b901c5c-image_1950.jpg?v=1759248233",
+      "ad": "Sofuoğlu Asya Alüminyum Kulp Krom",
+      "finish": "Krom",
+      "kategori": "Mobilya Kulpu",
+      "baslik": "Detaylarda|Zarafet",
+      "lifestyle_prompt": "Install this EXACT cabinet handle/pull FLUSH on a realistic modern cabinet door or drawer front, correct screw positions and horizontal orientation, no floating, no distorted perspective. Scene: high-end bathroom vanity, natural oak drawer fronts, stone countertop, warm backlight, spa-like calm mood, soft blur. CRITICAL FORM FIDELITY — the uploaded product image is the ONLY source of truth: reproduce the handle EXACTLY — the precise lever shape, curve, angle and thickness; the exact rectangular backplate size and proportions; the exact screw-hole positions; the keyhole/WC slot; the exact matte finish and color (matte black stays PURE MATTE BLACK, never blue/navy). Do NOT redesign, simplify, restyle, stretch or change ANY part of the handle; the mounted handle must be 100% identical in form to the reference. Install it correctly and technically as the sharp hero. Keep the upper third calmer for a headline. Photorealistic professional interior photoshoot, ultra sharp product, softly blurred background. No text/logo/watermark. 4:5 vertical."
     }
   ]
 }
