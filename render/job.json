@@ -1,15 +1,29 @@
 {
-  "tip": "lifestyle",
-  "klasor": "life-kulplar-2026-07-14",
+  "tip": "tekil",
+  "kategori": "Kapı Kolu",
+  "klasor": "gun-2026-07-16",
   "products": [
     {
-      "slug": "sofuoglu-asya-aluminyum-kulp-krom",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/9b901c5c-image_1950.jpg?v=1759248233",
-      "ad": "Sofuoğlu Asya Alüminyum Kulp Krom",
-      "finish": "Krom",
-      "kategori": "Mobilya Kulpu",
-      "baslik": "Detaylarda|Zarafet",
-      "lifestyle_prompt": "Install this EXACT cabinet handle/pull FLUSH on a realistic modern cabinet door or drawer front, correct screw positions and horizontal orientation, no floating, no distorted perspective. Scene: high-end bathroom vanity, natural oak drawer fronts, stone countertop, warm backlight, spa-like calm mood, soft blur. CRITICAL FORM FIDELITY — the uploaded product image is the ONLY source of truth: reproduce the handle EXACTLY — the precise lever shape, curve, angle and thickness; the exact rectangular backplate size and proportions; the exact screw-hole positions; the keyhole/WC slot; the exact matte finish and color (matte black stays PURE MATTE BLACK, never blue/navy). Do NOT redesign, simplify, restyle, stretch or change ANY part of the handle; the mounted handle must be 100% identical in form to the reference. Install it correctly and technically as the sharp hero. Keep the upper third calmer for a headline. Photorealistic professional interior photoshoot, ultra sharp product, softly blurred background. No text/logo/watermark. 4:5 vertical."
+      "slug": "lama-aynali-kapi-kolu-mat-siyah-wc-sol",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/lamasol3-scaled.jpg?v=1759497606",
+      "ad": "Lama Aynalı Kapı Kolu Mat Siyah",
+      "finish": "Mat Siyah",
+      "price": "579.99",
+      "compareAtPrice": "899.99",
+      "kategori": "Kapı Kolu · WC",
+      "tip": "door handle on a long rectangular backplate",
+      "durus": "dik"
+    },
+    {
+      "slug": "lerzan-eko-plato-wc-kapi-kolu-aynali-nikel-saten-sol",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/7e611739-image_1950-645.jpg?v=1759248257",
+      "ad": "Lerzan Eko Plato Kapı Kolu",
+      "finish": "Nikel Saten",
+      "price": "459.99",
+      "compareAtPrice": null,
+      "kategori": "Kapı Kolu · WC",
+      "tip": "door handle on a long rectangular backplate",
+      "durus": "dik"
     }
   ]
 }
