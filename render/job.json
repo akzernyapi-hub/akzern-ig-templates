@@ -1,27 +1,27 @@
 {
   "tip": "tekil",
   "kategori": "Kapı Kolu",
-  "klasor": "gun-2026-07-16",
+  "klasor": "gun-2026-07-18",
   "products": [
     {
-      "slug": "lama-aynali-kapi-kolu-mat-siyah-wc-sol",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/lamasol3-scaled.jpg?v=1759497606",
-      "ad": "Lama Aynalı Kapı Kolu Mat Siyah",
-      "finish": "Mat Siyah",
-      "price": "579.99",
-      "compareAtPrice": "899.99",
+      "slug": "bukra-anka-wc-kapi-kolu-nikel-saten",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/5e868fd8-image_1950-602.jpg?v=1759248257",
+      "ad": "Bukra/Anka WC Kapı Kolu",
+      "finish": "Nikel Saten",
+      "price": "549.99",
+      "compareAtPrice": null,
       "kategori": "Kapı Kolu · WC",
       "tip": "door handle on a long rectangular backplate",
       "durus": "dik"
     },
     {
-      "slug": "lerzan-eko-plato-wc-kapi-kolu-aynali-nikel-saten-sol",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/7e611739-image_1950-645.jpg?v=1759248257",
-      "ad": "Lerzan Eko Plato Kapı Kolu",
+      "slug": "anka-anka-aynali-kapi-kolu-nikel-saten-yale",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/9fbfc5df-image_1950-553.jpg?v=1759248253",
+      "ad": "Anka/Anka Aynalı Kapı Kolu",
       "finish": "Nikel Saten",
-      "price": "459.99",
+      "price": "776.99",
       "compareAtPrice": null,
-      "kategori": "Kapı Kolu · WC",
+      "kategori": "Kapı Kolu · YALE",
       "tip": "door handle on a long rectangular backplate",
       "durus": "dik"
     }
