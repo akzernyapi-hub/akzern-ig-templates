@@ -1,27 +1,27 @@
 {
   "tip": "tekil",
   "kategori": "Kapı Kolu",
-  "klasor": "gun-2026-07-21",
+  "klasor": "gun-2026-07-25",
   "products": [
     {
-      "slug": "anka-aynali-kapi-kolu-nikel-saten-oda",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/8fa6c2ac-image_1950-552.jpg?v=1759248253",
-      "ad": "Anka Aynalı Kapı Kolu",
-      "finish": "Nikel Saten",
-      "price": "776.99",
-      "compareAtPrice": null,
+      "slug": "pola-dolfin-aynali-albirifin-kapi-kolu",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/render_59341ce7-753f-4cee-80a0-1916b66cbb87.png?v=1784576964",
+      "ad": "Pola/Dolfin Albirifin Kapı Kolu",
+      "finish": "Albirifin",
+      "price": "1679.99",
+      "compareAtPrice": "1863.99",
       "kategori": "Kapı Kolu · ODA",
       "tip": "door handle on a long rectangular backplate",
       "durus": "dik"
     },
     {
-      "slug": "lotus-aynali-mat-siyah-kapi-kolu-wc",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/aa35dae5-image_1950-301.jpg?v=1759248244",
-      "ad": "Lotus Mat Siyah Kapı Kolu",
-      "finish": "Mat Siyah",
-      "price": "961.99",
-      "compareAtPrice": null,
-      "kategori": "Kapı Kolu · WC",
+      "slug": "mercan-anka-aynali-nikel-saten-kapi-kolu",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/render_a65bb6a8-6632-438b-8153-db5a773ed5c1.png?v=1782431387",
+      "ad": "Mercan/Anka Nikel Saten Kapı Kolu",
+      "finish": "Nikel Saten",
+      "price": "1959.99",
+      "compareAtPrice": "2172.99",
+      "kategori": "Kapı Kolu · ODA",
       "tip": "door handle on a long rectangular backplate",
       "durus": "dik"
     }
