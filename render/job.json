@@ -1,27 +1,27 @@
 {
   "tip": "tekil",
   "kategori": "Kapı Kolu",
-  "klasor": "gun-2026-07-30",
+  "klasor": "gun-2026-08-01",
   "products": [
     {
-      "slug": "almira-luks-anka-aynali-fume-saten-kapi-kolu",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/render_9ef38175-2267-42cc-9b12-057ea2666371.png?v=1782578739",
-      "ad": "Almira Aynalı Füme Saten Kapı Kolu",
-      "finish": "Füme Saten",
-      "price": "2054.99",
-      "compareAtPrice": "2280.99",
-      "kategori": "Kapı Kolu · ODA",
+      "slug": "palyo-nikel-inox-aynali-yale",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/140-palyo-nikel-saten-aynali-1768688558.jpg?v=1769077212",
+      "ad": "Palyo Nikel İnox Aynalı Yale",
+      "finish": "Nikel İnox",
+      "price": "2349.99",
+      "compareAtPrice": "2607.99",
+      "kategori": "Kapı Kolu · YALE",
       "tip": "door handle on a long rectangular backplate",
       "durus": "dik"
     },
     {
-      "slug": "lotus-aynali-mat-siyah",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-306.jpg?v=1759497675",
-      "ad": "Lotus Aynalı Mat Siyah Kapı Kolu",
-      "finish": "Mat Siyah",
-      "price": "899.99",
-      "compareAtPrice": null,
-      "kategori": "Kapı Kolu · ODA",
+      "slug": "palyo-inox-albrifin-aynali-yale",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/140-palyo-alb-saten-aynali-1768688414.jpg?v=1769034775",
+      "ad": "Palyo İnox Albrifin Aynalı Yale",
+      "finish": "İnox Albrifin",
+      "price": "2349.99",
+      "compareAtPrice": "2607.99",
+      "kategori": "Kapı Kolu · YALE",
       "tip": "door handle on a long rectangular backplate",
       "durus": "dik"
     }
