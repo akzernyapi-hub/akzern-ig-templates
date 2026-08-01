@@ -1,0 +1,38 @@
+name: Refresh Instagram Token
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 6 1 * *'
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: IG token yenile ve secret guncelle
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          if [ -z "$IG_TOKEN" ]; then
+            echo "HATA: IG_TOKEN secret bulunamadi."
+            exit 1
+          fi
+          echo "Instagram token yenileniyor..."
+          RESPONSE=$(curl -s "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=$IG_TOKEN")
+          NEW_TOKEN=$(echo "$RESPONSE" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('access_token',''))" 2>/dev/null)
+          EXPIRES_IN=$(echo "$RESPONSE" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('expires_in',0))" 2>/dev/null)
+          TOKEN_TYPE=$(echo "$RESPONSE" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('token_type',''))" 2>/dev/null)
+          if [ -z "$NEW_TOKEN" ]; then
+            echo "HATA: Token yenilenemedi. API hata bilgisi:"
+            echo "$RESPONSE" | python3 -c "import sys,json; d=json.load(sys.stdin); d.pop('access_token',None); print(json.dumps(d,indent=2))" 2>/dev/null || echo "$RESPONSE"
+            exit 1
+          fi
+          DAYS=$(python3 -c "print(round($EXPIRES_IN/86400))")
+          echo "Token basariyla yenilendi. token_type=$TOKEN_TYPE, expires_in=${EXPIRES_IN}s (~${DAYS} gun)"
+          if [ -n "$GH_TOKEN" ]; then
+            echo "$NEW_TOKEN" | gh secret set IG_TOKEN -R "$GITHUB_REPOSITORY"
+            echo "IG_TOKEN GitHub secret olarak guncellendi."
+          else
+            echo "UYARI: GH_TOKEN secret bulunamadi, IG_TOKEN otomatik guncellenemedi."
+            echo "Lutfen Graph API Explorer (developers.facebook.com/tools/explorer) ile IG_TOKEN'i elle yenileyin."
+            exit 1
+          fi
