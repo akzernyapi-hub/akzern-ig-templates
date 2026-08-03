@@ -1,63 +1,25 @@
 {
-  "tip": "carousel",
-  "kategori": "Kilitler & Güvenlik",
-  "klasor": "carousel-kilitler-2026-08-03",
-  "kapak_baslik": "Güvenliğiniz|Emin Ellerde",
+  "tip": "tekil",
+  "kategori": "Kapı Kolu",
+  "klasor": "gun-2026-08-04",
   "products": [
     {
-      "slug": "kale-152-rp-45mm-silindirli-daire-kilidi-18mm-oval-krom",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/r108_152rp4518.png?v=1782947275",
-      "ad": "KALE 152/RP Daire Kilidi",
-      "finish": "Krom",
-      "price": "949.99",
-      "compareAtPrice": "1052.99",
-      "kategori": "Kilit · Daire Kilidi",
-      "tip": "door lock / cylinder lock body",
-      "durus": "dik"
+      "slug": "alize-matsiyah-aynali-oda",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/alize-1-1768693240.png?v=1768948835",
+      "ad": "Alize Mat Siyah Aynalı Oda",
+      "finish": "Mat Siyah",
+      "price": "1869.99",
+      "compareAtPrice": "2074.99",
+      "kategori": "Kapı Kolu · ODA"
     },
     {
-      "slug": "kale-155-b-35mm-makarali-carpma-nikel",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/r73_155b.png?v=1782940563",
-      "ad": "KALE 155/B Gömme Kilit",
-      "finish": "Nikel",
-      "price": "584.99",
-      "compareAtPrice": "645.99",
-      "kategori": "Kilit · Gömme Kilit",
-      "tip": "door lock / cylinder lock body",
-      "durus": "dik"
-    },
-    {
-      "slug": "kale-189-52mm-silindirli-emniyet-4-milli-kilit",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/r112_189_52.png?v=1782948169",
-      "ad": "KALE 189 Emniyet Kilidi",
-      "finish": "Standart",
-      "price": "644.99",
-      "compareAtPrice": "713.99",
-      "kategori": "Kilit · Emniyet Kilidi",
-      "tip": "door lock / cylinder lock body",
-      "durus": "dik"
-    },
-    {
-      "slug": "kale-257-l-fiseli-celik-kapi-emniyet-kilidi-3-anahtar",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/r32_257l.png?v=1782932378",
-      "ad": "KALE 257/L Çelik Kapı Kilidi",
-      "finish": "Standart",
-      "price": "2004.99",
-      "compareAtPrice": "2226.99",
-      "kategori": "Kilit · Çelik Kapı Kilidi",
-      "tip": "door lock / cylinder lock body",
-      "durus": "dik"
-    },
-    {
-      "slug": "pirinc-asma-kilit-sari-40mm",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/548757be-image_1950-499.jpg?v=1759248252",
-      "ad": "Pirinç Asma Kilit",
-      "finish": "Sarı (Pirinç)",
-      "price": "549.99",
-      "compareAtPrice": "609.99",
-      "kategori": "Kilit · Asma Kilit",
-      "tip": "door lock / cylinder lock body",
-      "durus": "dik"
+      "slug": "alize-matsiyah-aynali-wc-sol",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/alize-1-1768693075.png?v=1768948574",
+      "ad": "Alize Mat Siyah Aynalı WC Sol",
+      "finish": "Mat Siyah",
+      "price": "1944.99",
+      "compareAtPrice": "2159.99",
+      "kategori": "Kapı Kolu · WC"
     }
   ]
 }
