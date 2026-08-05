@@ -1,15 +1,25 @@
 {
-  "tip": "lifestyle",
-  "klasor": "life-kulplar-2026-08-04",
+  "tip": "tekil",
+  "kategori": "Kapı Kolu",
+  "klasor": "gun-2026-08-06",
   "products": [
     {
-      "slug": "sofuoglu-asya-aluminyum-kulp-krom",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/9b901c5c-image_1950.jpg?v=1759248233",
-      "ad": "Sofuoğlu Asya Alüminyum Kulp Krom",
-      "finish": "Krom",
-      "kategori": "Mobilya Kulpu",
-      "baslik": "Detaylarda|Zarafet",
-      "lifestyle_prompt": "Install this EXACT cabinet handle/pull FLUSH on a realistic modern cabinet door or drawer front, correct screw positions and horizontal orientation, no floating, no distorted perspective. Scene: contemporary living room sideboard/TV unit, walnut drawers, warm lamp glow, minimal decor, cozy premium atmosphere. CRITICAL FORM FIDELITY — the uploaded product image is the ONLY source of truth: reproduce the handle EXACTLY — the precise lever shape, curve, angle and thickness; the exact rectangular backplate size and proportions; the exact screw-hole positions; the keyhole/WC slot; the exact matte finish and color (matte black stays PURE MATTE BLACK, never blue/navy). Do NOT redesign, simplify, restyle, stretch or change ANY part of the handle; the mounted handle must be 100% identical in form to the reference. Install it correctly and technically as the sharp hero. Keep the upper third calmer for a headline. Photorealistic professional interior photoshoot, ultra sharp product, softly blurred background. No text/logo/watermark. 4:5 vertical."
+      "slug": "alize-matsiyah-aynali-yale",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/photo-2026-01-18-02-38-32-2-1768693405.jpg?v=1768948290",
+      "ad": "Alize Mat Siyah Aynalı Yale",
+      "finish": "Mat Siyah",
+      "price": "1869.99",
+      "compareAtPrice": "2074.99",
+      "kategori": "Kapı Kolu · YALE"
+    },
+    {
+      "slug": "palyo-inox-albrifin-aynali-oda",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/140-palyo-alb-saten-aynali-1768660332.jpg?v=1768947601",
+      "ad": "Palyo İnox Albrifin Aynalı Oda",
+      "finish": "İnox",
+      "price": "2349.99",
+      "compareAtPrice": "2607.99",
+      "kategori": "Kapı Kolu · ODA"
     }
   ]
 }
