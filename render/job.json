@@ -1,24 +1,24 @@
 {
   "tip": "tekil",
   "kategori": "Kapı Kolu",
-  "klasor": "gun-2026-08-06",
+  "klasor": "gun-2026-08-11",
   "products": [
     {
-      "slug": "alize-matsiyah-aynali-yale",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/photo-2026-01-18-02-38-32-2-1768693405.jpg?v=1768948290",
-      "ad": "Alize Mat Siyah Aynalı Yale",
+      "slug": "sevomi-siyah-aynali-oda",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0736/0354/7289/files/GORSEL1.webp?v=1785928684",
+      "ad": "Sevomi Siyah Aynalı",
       "finish": "Mat Siyah",
-      "price": "1869.99",
-      "compareAtPrice": "2074.99",
-      "kategori": "Kapı Kolu · YALE"
+      "price": "899.90",
+      "compareAtPrice": null,
+      "kategori": "Kapı Kolu · ODA"
     },
     {
-      "slug": "palyo-inox-albrifin-aynali-oda",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/140-palyo-alb-saten-aynali-1768660332.jpg?v=1768947601",
-      "ad": "Palyo İnox Albrifin Aynalı Oda",
-      "finish": "İnox",
-      "price": "2349.99",
-      "compareAtPrice": "2607.99",
+      "slug": "sevomi-altin-aynali-oda",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0736/0354/7289/files/GORSEL1.webp?v=1785928684",
+      "ad": "Sevomi Altın Aynalı",
+      "finish": "Altın",
+      "price": "899.90",
+      "compareAtPrice": null,
       "kategori": "Kapı Kolu · ODA"
     }
   ]
