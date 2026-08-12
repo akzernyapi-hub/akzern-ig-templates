@@ -1,15 +1,29 @@
 {
-  "tip": "lifestyle",
-  "klasor": "life-kapi-kollari-2026-08-11",
+  "tip": "tekil",
+  "kategori": "Kapı Kolu",
+  "klasor": "gun-2026-08-13",
   "products": [
     {
-      "slug": "sevimo",
+      "slug": "sevomi-siyah",
       "gercek_url": "https://cdn.shopify.com/s/files/1/0736/0354/7289/files/GORSEL1.webp?v=1785928684",
       "ad": "Sevomi",
       "finish": "Siyah",
-      "kategori": "Kapı Kolu",
-      "baslik": "Detaylarda|Zarafet",
-      "lifestyle_prompt": "Mount this EXACT door handle correctly on a premium interior wooden door at realistic handle height, technically correct spindle and lock position, flush and grounded, never floating. Scene: luxury warm minimalist residential hallway, dark walnut door, soft natural daylight from a side window, designer console table with a vase, stone and wood textures, calm expensive mood. CRITICAL FORM FIDELITY — the uploaded product image is the ONLY source of truth: reproduce the handle EXACTLY — the precise lever shape, curve, angle and thickness; the exact rectangular backplate size and proportions; the exact screw-hole positions; the keyhole/WC slot; the exact matte finish and color (matte black stays PURE MATTE BLACK, never blue/navy). Do NOT redesign, simplify, restyle, stretch or change ANY part of the handle; the mounted handle must be 100% identical in form to the reference. Install it correctly and technically as the sharp hero. Keep the upper third calmer for a headline. Photorealistic professional interior photoshoot, ultra sharp product, softly blurred background. No text/logo/watermark. 4:5 vertical."
+      "price": "899.90",
+      "compareAtPrice": null,
+      "kategori": "Kapı Kolu · ODA",
+      "tip": "door handle on a long rectangular backplate",
+      "durus": "dik"
+    },
+    {
+      "slug": "sevomi-altin",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0736/0354/7289/files/GORSEL1.webp?v=1785928684",
+      "ad": "Sevomi",
+      "finish": "Altın",
+      "price": "899.90",
+      "compareAtPrice": null,
+      "kategori": "Kapı Kolu · ODA",
+      "tip": "door handle on a long rectangular backplate",
+      "durus": "dik"
     }
   ]
 }
