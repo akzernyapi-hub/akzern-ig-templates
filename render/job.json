@@ -1,15 +1,29 @@
 {
-  "tip": "lifestyle",
-  "klasor": "life-kulplar-2026-08-18",
+  "tip": "tekil",
+  "kategori": "Kapı Kolu",
+  "klasor": "gun-2026-08-20",
   "products": [
     {
-      "slug": "burgu-altin-96mm",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/brg-96-20-1-1772568202.jpg?v=1772568381",
-      "ad": "BURGU ALTIN 96MM",
-      "finish": "altin",
-      "kategori": "Mobilya Kulpu",
-      "baslik": "Detaylarda|Zarafet",
-      "lifestyle_prompt": "Install this EXACT cabinet handle/pull FLUSH on a realistic modern cabinet door or drawer front, correct screw positions and horizontal orientation, no floating, no distorted perspective. Scene: high-end bathroom vanity, natural oak drawer fronts, stone countertop, warm backlight, spa-like calm mood, soft blur. CRITICAL FORM FIDELITY — the uploaded product image is the ONLY source of truth: reproduce the handle EXACTLY — the precise lever shape, curve, angle and thickness; the exact rectangular backplate size and proportions; the exact screw-hole positions; the keyhole/WC slot; the exact matte finish and color (matte black stays PURE MATTE BLACK, never blue/navy). Do NOT redesign, simplify, restyle, stretch or change ANY part of the handle; the mounted handle must be 100% identical in form to the reference. Install it correctly and technically as the sharp hero. Keep the upper third calmer for a headline. Photorealistic professional interior photoshoot, ultra sharp product, softly blurred background. No text/logo/watermark. 4:5 vertical."
+      "slug": "pola-dolfin-aynali-kapi-kolu",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/render_59341ce7-753f-4cee-80a0-1916b66cbb87.png?v=1784576964",
+      "ad": "Pola Dolfin Aynalı Kapı Kolu",
+      "finish": "Albirifin",
+      "price": "1679.99",
+      "compareAtPrice": "1863.99",
+      "kategori": "Kapı Kolu · ODA",
+      "tip": "door handle on a long rectangular backplate",
+      "durus": "dik"
+    },
+    {
+      "slug": "mercan-anka-aynali-nikel-saten-kapi-kolu",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/render_a65bb6a8-6632-438b-8153-db5a773ed5c1.png?v=1782431387",
+      "ad": "Mercan Anka Aynalı Nikel Saten Kapı Kolu",
+      "finish": "Nikel Saten",
+      "price": "1959.99",
+      "compareAtPrice": "2172.99",
+      "kategori": "Kapı Kolu · ODA",
+      "tip": "door handle on a long rectangular backplate",
+      "durus": "dik"
     }
   ]
 }
