@@ -1,26 +1,26 @@
 {
   "tip": "tekil",
   "kategori": "Kapı Kolu",
-  "klasor": "gun-2026-08-20",
+  "klasor": "gun-2026-08-22",
   "products": [
     {
-      "slug": "pola-dolfin-aynali-kapi-kolu",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/render_59341ce7-753f-4cee-80a0-1916b66cbb87.png?v=1784576964",
-      "ad": "Pola Dolfin Aynalı Kapı Kolu",
-      "finish": "Albirifin",
-      "price": "1679.99",
-      "compareAtPrice": "1863.99",
+      "slug": "lotus-aynali-mat-siyah",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-306.jpg?v=1759497675",
+      "ad": "Lotus Aynalı Mat Siyah",
+      "finish": "Mat Siyah",
+      "price": "899.99",
+      "compareAtPrice": null,
       "kategori": "Kapı Kolu · ODA",
       "tip": "door handle on a long rectangular backplate",
       "durus": "dik"
     },
     {
-      "slug": "mercan-anka-aynali-nikel-saten-kapi-kolu",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/render_a65bb6a8-6632-438b-8153-db5a773ed5c1.png?v=1782431387",
-      "ad": "Mercan Anka Aynalı Nikel Saten Kapı Kolu",
+      "slug": "lotus-aynali-nikel-saten",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/8cede2e3-image_1950-313.jpg?v=1759248245",
+      "ad": "Lotus Aynalı Nikel Saten",
       "finish": "Nikel Saten",
-      "price": "1959.99",
-      "compareAtPrice": "2172.99",
+      "price": "899.99",
+      "compareAtPrice": null,
       "kategori": "Kapı Kolu · ODA",
       "tip": "door handle on a long rectangular backplate",
       "durus": "dik"
