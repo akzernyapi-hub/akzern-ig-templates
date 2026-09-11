@@ -1,25 +1,29 @@
 {
   "tip": "tekil",
   "kategori": "Kapı Kolu",
-  "klasor": "gun-2026-09-10",
+  "klasor": "gun-2026-09-12",
   "products": [
     {
-      "slug": "palyo-nikel-inox-aynali-yale",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/140-palyo-nikel-saten-aynali-1768688558.jpg?v=1769077212",
-      "ad": "Palyo Nikel İnox Aynalı Yale",
-      "finish": "Nikel İnox",
+      "slug": "palyo-inox-albrifin-aynali-oda",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/140-palyo-alb-saten-aynali-1768660332.jpg?v=1768947601",
+      "ad": "Palyo İnox Albrifin Aynalı Oda",
+      "finish": "İnox",
       "price": "2349.99",
       "compareAtPrice": "2607.99",
-      "kategori": "Kapı Kolu · YALE"
+      "kategori": "Kapı Kolu · ODA",
+      "tip": "door handle on a long rectangular backplate",
+      "durus": "dik"
     },
     {
-      "slug": "palyo-inox-albrifin-aynali-yale",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/140-palyo-alb-saten-aynali-1768688414.jpg?v=1769034775",
-      "ad": "Palyo İnox Albrifin Aynalı Yale",
-      "finish": "Albrifin",
-      "price": "2349.99",
-      "compareAtPrice": "2607.99",
-      "kategori": "Kapı Kolu · YALE"
+      "slug": "alize-matsiyah-aynali-wc-sag",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/alize-1-1768693318.png?v=1768946198",
+      "ad": "Alize Mat Siyah Aynalı WC Sağ",
+      "finish": "Mat Siyah",
+      "price": "1944.99",
+      "compareAtPrice": "2159.99",
+      "kategori": "Kapı Kolu · WC",
+      "tip": "door handle on a long rectangular backplate",
+      "durus": "dik"
     }
   ]
 }
