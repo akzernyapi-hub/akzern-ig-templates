@@ -1,27 +1,27 @@
 {
   "tip": "tekil",
   "kategori": "Kapı Kolu",
-  "klasor": "gun-2026-09-17",
+  "klasor": "gun-2026-09-19",
   "products": [
     {
-      "slug": "lotus-aynali-mat-siyah-kapi-kolu-wc-sol",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-303.jpg?v=1759497677",
-      "ad": "Lotus Aynalı Mat Siyah Kapı Kolu (WC SOL)",
-      "finish": "Mat Siyah",
-      "price": "869.99",
-      "compareAtPrice": "961.99",
-      "kategori": "Kapı Kolu · WC",
+      "slug": "kristal-aynali-nikel-saten-kapi-kolu-yale",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-286.jpg?v=1759497653",
+      "ad": "Kristal Aynalı Nikel Saten Kapı Kolu YALE",
+      "finish": "Nikel Saten",
+      "price": "884.99",
+      "compareAtPrice": null,
+      "kategori": "Kapı Kolu · YALE",
       "tip": "door handle on a long rectangular backplate",
       "durus": "dik"
     },
     {
-      "slug": "lotus-aynali-mat-siyah-kapi-kolu-oda",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-306.jpg?v=1759497675",
-      "ad": "Lotus Aynalı Mat Siyah Kapı Kolu ODA",
-      "finish": "Mat Siyah",
-      "price": "814.99",
-      "compareAtPrice": "837.99",
-      "kategori": "Kapı Kolu · ODA",
+      "slug": "kristal-aynali-nikel-saten-kapi-kolu-wc-sol",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-281.jpg?v=1759497651",
+      "ad": "Kristal Aynalı Nikel Saten Kapı Kolu (WC SOL)",
+      "finish": "Nikel Saten",
+      "price": "994.99",
+      "compareAtPrice": null,
+      "kategori": "Kapı Kolu · WC",
       "tip": "door handle on a long rectangular backplate",
       "durus": "dik"
     }
