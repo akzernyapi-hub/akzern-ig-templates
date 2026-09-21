@@ -1,52 +1,25 @@
 {
-  "tip": "carousel",
-  "kategori": "Kapı Çekmeleri",
-  "klasor": "carousel-kapi-cekmeler-2026-09-21",
-  "kapak_baslik": "Modern|Dokunuşlar",
+  "tip": "tekil",
+  "kategori": "Kapı Kolu",
+  "klasor": "gun-2026-09-22",
   "products": [
     {
-      "slug": "avanti-kare-mat-siyah-wc",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/1132-avanti-kare-rozetli-mat-siyah-1768861439.jpg?v=1769201360",
-      "ad": "Avanti Kare Rozetli Kapı Çekme WC",
+      "slug": "lama-aynali-kapi-kolu-mat-siyah-wc-sol",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/lamasol3-scaled.jpg?v=1759497606",
+      "ad": "Lama Aynalı Kapı Kolu Mat Siyah",
       "finish": "Mat Siyah",
-      "price": "499.99",
-      "compareAtPrice": "549.99",
-      "kategori": "Kapı Çekme · Mat Siyah",
-      "tip": "door pull handle / gate pull bar",
-      "durus": "dik"
+      "price": "579.99",
+      "compareAtPrice": "899.99",
+      "kategori": "Kapı Kolu · WC"
     },
     {
-      "slug": "kucuk-lale-cekme-inox",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/3051-k-1768866954.png?v=1768867048",
-      "ad": "Küçük Lale Çekme Kolu",
-      "finish": "İnox",
-      "price": "479.99",
-      "compareAtPrice": "528.99",
-      "kategori": "Kapı Çekme · İnox",
-      "tip": "door pull handle / gate pull bar",
-      "durus": "dik"
-    },
-    {
-      "slug": "osmanli-cekme-antik-sari",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-472.jpg?v=1759498945",
-      "ad": "Osmanlı Çekme Dış Kapı Kolu",
-      "finish": "Antik Sarı",
-      "price": "799.99",
-      "compareAtPrice": null,
-      "kategori": "Kapı Çekme · Antik Sarı",
-      "tip": "door pull handle / gate pull bar",
-      "durus": "dik"
-    },
-    {
-      "slug": "nehir-cekme-inox",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-424.jpg?v=1759497685",
-      "ad": "Nehir Çekme Kapı Kolu",
-      "finish": "İnox",
-      "price": "479.99",
-      "compareAtPrice": "529.99",
-      "kategori": "Kapı Çekme · İnox",
-      "tip": "door pull handle / gate pull bar",
-      "durus": "dik"
+      "slug": "lama-aynali-kapi-kolu-mat-siyah-wc-sag",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/lama-sag1-scaled.jpg?v=1759497606",
+      "ad": "Lama Aynalı Kapı Kolu Mat Siyah",
+      "finish": "Mat Siyah",
+      "price": "579.99",
+      "compareAtPrice": "899.99",
+      "kategori": "Kapı Kolu · WC"
     }
   ]
 }
