@@ -1,25 +1,63 @@
 {
-  "tip": "tekil",
-  "kategori": "Kapı Kolu",
-  "klasor": "gun-2026-09-26",
+  "tip": "carousel",
+  "kategori": "Çekmece Rayları",
+  "klasor": "carousel-cekmece-raylari-2026-09-28",
+  "kapak_baslik": "Kusursuz|Kayma",
   "products": [
     {
-      "slug": "bukra-anka-kapi-kolu-nikel-saten",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/3a6db33f-image_1950-609.jpg?v=1759248257",
-      "ad": "Bukra/Anka Kapı Kolu Nikel Saten",
-      "finish": "Nikel Saten",
-      "price": "489.99",
-      "compareAtPrice": "539.99",
-      "kategori": "Kapı Kolu · ODA"
+      "slug": "teleskopik-bilyali-ray-genis-43mm-kaplamali",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/render_b8dfc936-227b-453b-a2ce-8630e68b7763.png?v=1783785338",
+      "ad": "Teleskopik Bilyalı Ray Geniş 43mm Kaplamalı",
+      "finish": "Krom",
+      "price": "429.99",
+      "compareAtPrice": "474.99",
+      "kategori": "Çekmece Rayı · 40 cm",
+      "tip": "drawer slide / telescopic runner rail",
+      "durus": "slas"
     },
     {
-      "slug": "bukra-anka-aynali-wc-kapi-kolu-albirifin-saten",
-      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/e2d72e91-image_1950-608.jpg?v=1759248257",
-      "ad": "Bukra/Anka Aynalı (WC) Kapı Kolu Albirifin Saten",
-      "finish": "Albirifin Saten",
-      "price": "499.99",
-      "compareAtPrice": "549.99",
-      "kategori": "Kapı Kolu · WC"
+      "slug": "frenli-teleskopik-bilyali-ray-genis-43mm-kaplamali",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/render_00edd734-713b-4ecb-a1f3-7346c0f73273.png?v=1783785341",
+      "ad": "Frenli Teleskopik Bilyalı Ray Geniş 43mm Kaplamalı",
+      "finish": "Krom",
+      "price": "634.99",
+      "compareAtPrice": "701.99",
+      "kategori": "Çekmece Rayı · 40 cm",
+      "tip": "drawer slide / telescopic runner rail",
+      "durus": "slas"
+    },
+    {
+      "slug": "teleskopik-bilyali-ray-35mm",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/render_2b1864a5-e2de-4f8e-9df0-ee2222ac8ff3.png?v=1783785333",
+      "ad": "Teleskopik Bilyalı Ray 35mm",
+      "finish": "Krom",
+      "price": "244.99",
+      "compareAtPrice": "266.99",
+      "kategori": "Çekmece Rayı · 30 cm",
+      "tip": "drawer slide / telescopic runner rail",
+      "durus": "slas"
+    },
+    {
+      "slug": "teleskopik-bilyeli-cekmece-rayi-43mm-50cm",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-151.jpg?v=1759497586",
+      "ad": "Teleskopik Bilyeli Çekmece Rayı 43mm 50cm 2'li",
+      "finish": "Krom",
+      "price": "439.99",
+      "compareAtPrice": "486.99",
+      "kategori": "Çekmece Rayı · 50 cm",
+      "tip": "drawer slide / telescopic runner rail",
+      "durus": "slas"
+    },
+    {
+      "slug": "teleskopik-bilyeli-cekmece-rayi-17mm-35cm",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/image_1950-137.jpg?v=1759497579",
+      "ad": "Teleskopik Bilyeli Çekmece Rayı 17mm 35cm 2'li",
+      "finish": "Krom",
+      "price": "84.99",
+      "compareAtPrice": "88.99",
+      "kategori": "Çekmece Rayı · 35 cm",
+      "tip": "drawer slide / telescopic runner rail",
+      "durus": "slas"
     }
   ]
 }
