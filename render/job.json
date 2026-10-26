@@ -1,26 +1,26 @@
 {
   "tip": "tekil",
   "kategori": "Kapı Kolu",
-  "klasor": "gun-2026-10-20",
+  "klasor": "gun-2026-10-27",
   "products": [
     {
-      "slug": "kristal-aynali-nikel-saten",
-      "gercek_url": "assets/ic/kristal.png",
-      "ad": "Kristal Aynalı|Kapı Kolu",
-      "finish": "Nikel Saten",
-      "price": "819.99",
+      "slug": "noyan-aynali-antrasit",
+      "gercek_url": "assets/ic/noyan.png",
+      "ad": "Noyan Aynalı|Kapı Kolu",
+      "finish": "Antrasit",
+      "price": "657.99",
       "compareAtPrice": null,
       "kategori": "Kapı Kolu · ODA",
       "tip": "door handle on a long rectangular backplate",
       "durus": "dik"
     },
     {
-      "slug": "lotus-aynali-mat-siyah",
-      "gercek_url": "assets/ic/lotus-siyah.png",
-      "ad": "Lotus Aynalı|Kapı Kolu",
+      "slug": "lama-aynali-mat-siyah",
+      "gercek_url": "assets/ic/lama.png",
+      "ad": "Lama Aynalı|Kapı Kolu",
       "finish": "Mat Siyah",
-      "price": "837.99",
-      "compareAtPrice": null,
+      "price": "219.99",
+      "compareAtPrice": "269.99",
       "kategori": "Kapı Kolu · ODA",
       "tip": "door handle on a long rectangular backplate",
       "durus": "dik"
