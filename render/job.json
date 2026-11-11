@@ -1,27 +1,27 @@
 {
   "tip": "tekil",
   "kategori": "Kapı Kolu",
-  "klasor": "gun-2026-10-27",
+  "klasor": "gun-2026-11-12",
   "products": [
     {
-      "slug": "noyan-aynali-antrasit",
-      "gercek_url": "assets/ic/noyan.png",
-      "ad": "Noyan Aynalı|Kapı Kolu",
-      "finish": "Antrasit",
-      "price": "657.99",
-      "compareAtPrice": null,
-      "kategori": "Kapı Kolu · ODA",
+      "slug": "palyo-nikel-inox-aynali-yale",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/140-palyo-nikel-saten-aynali-1768688558.jpg?v=1769077212",
+      "ad": "Palyo Nikel İnox|Kapı Kolu",
+      "finish": "Nikel İnox",
+      "price": "2349.99",
+      "compareAtPrice": "2607.99",
+      "kategori": "Kapı Kolu · YALE",
       "tip": "door handle on a long rectangular backplate",
       "durus": "dik"
     },
     {
-      "slug": "lama-aynali-mat-siyah",
-      "gercek_url": "assets/ic/lama.png",
-      "ad": "Lama Aynalı|Kapı Kolu",
-      "finish": "Mat Siyah",
-      "price": "219.99",
-      "compareAtPrice": "269.99",
-      "kategori": "Kapı Kolu · ODA",
+      "slug": "palyo-inox-albrifin-aynali-yale",
+      "gercek_url": "https://cdn.shopify.com/s/files/1/0938/5957/8140/files/140-palyo-alb-saten-aynali-1768688414.jpg?v=1769034775",
+      "ad": "Palyo İnox Albrifin|Kapı Kolu",
+      "finish": "İnox Albrifin",
+      "price": "2349.99",
+      "compareAtPrice": "2607.99",
+      "kategori": "Kapı Kolu · YALE",
       "tip": "door handle on a long rectangular backplate",
       "durus": "dik"
     }
